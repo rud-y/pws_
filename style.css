@@ -1,44 +1,122 @@
+/* html {
+    font-size: 100%;
+    box-sizing: border-box;
+} */
 body {
-    background-image: "images/RZ_background_edi.png";
+    min-height: 100vh;
+    background-color: whitesmoke;
+    font-family: 'Fondamento', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-family: 'Sniglet', cursive;
 }
-#name-image {
-    width: 180px;
-    height: 80px;
-    border: solid black 0.1rem;
-}
-nav ul li {
-    display: flex;
-    margin-right: 8rem;
-}
-nav {
+/* *, *::before, *::after {
+    box-sizing: inherit;
+} */
+
+.navigation-bar {
+    position: relative;
     width: 100%;
-}
-ul {
+    height: 300px;
+    margin-bottom: 1rem;
+    background-image: url(images/edi_sunset.jpg);
+    background-size: contain;
     
 }
-
-#header-container {
-    border: solid black 0.1rem;
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 5;
+#logo {
+    position: relative;
+    width: 350px;
+    height: 60px;
+    font-size: 3rem;
+    padding: 0 5px 0 5px;
+    margin-right: 15px;
+    border: solid black 1px;
+    float: left;
 }
 
-.header-item {
-    display: flex;
-    flex-flow: row wrap;
-    border: solid black 0.1rem;
+ul {
+    position: relative;
+    width: fit-content;
+    float: right;
+    padding: 10px;
+    border: solid 1px black;
+    margin-top: 120px;
+}
+ul > li {
+    list-style: none;
+    display: inline;
+    padding: 5px;
+    margin-right: 2px;
+}
+
+.section {
+    width: 97%;
+    height: 450px;
+}
+
+.navigation-bar > a {
+    text-decoration: none;
+    color: black;
+}
+.about-me {
+    background: lightblue;
+    transition:  width 1s, height 1s, transform 2s;
+      
+    /* border: solid 1px black;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 
+    inset 0 -3em rgb(0,0,0,0),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3); */
+}
+
+.portfolio {
+    background-color: aquamarine;
+    border: solid 1px black;
+}
+
+.image-wrapper {
+    width:100%;
+    height: 250px;
+    border: blue 1px solid;
+}
+.image-wrapper-ccimage {
+    background-image: url(images/codeclan_logo.png);
+    background-size: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border: solid 1px black;
+}
+
+.about-me {
+    padding: 0.3rem 0.3rem 0.5rem 0.5rem;
+    background: #5d85a5
+    linear-gradient(
+    to bottom,
+    #c8dbe9,
+    #b7c3ce calc(50% - 10px),
+    #f1f2f8
+  );
 }
 
 
-@media screen and (max-width: 600px){
-    nav ul {
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+   }
+
+
+
+@media screen and (max-width: 640px){
+    .main-menu {
         display: none;
     }
 }
 
-@media screen and (min-width: 580px) {
-    #b1 {
-        display: none;
-    }
+@media screen and (min-width: 700px) {
+    
 }
