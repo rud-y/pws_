@@ -28,32 +28,34 @@ h2 {
 
 .logo-div {
     height: 160px;
-    width: 300px;
+    width: 168px;
+    padding: 6px;
     background-image: url(images/edi_sun.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    border-radius: 100px;
+    border-radius: 10em;
 }
 #logo {
-    position: fixed;
-    margin-top: 0;
-    font-size: 2rem;
+    position: relative;
+    margin-top: 15px;
+    font-size: 30px;
     text-align: center;
-    padding: 2px;
     border: solid black 1px;
 }
 #logo > a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ul {
     position: relative;
     float: right;
     padding: 10px;
-    border: solid 1px black;
     margin-top: 0 auto;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
 }
+
 ul > li {
     list-style: none;
     display: inline;
@@ -88,21 +90,19 @@ ul > li {
 }
 
 .portfolio-container {
-    background-color: rgb(174, 187, 183);
+    background-color: rgb(236, 241, 240);
     border: solid 1px rgb(112, 110, 110);
     display: flex;
     flex-flow: row wrap;
 }
 
-div.portfolio-box {
-    display: flexbox;
+.portfolio-box {
     width: 376px;
     padding: 15px 15px 15px 15px;
-    margin: 15px;
+    margin: 25px;
     border: 2px solid #b8b7b7;
-    background-color: white;
-    box-shadow: 10px 5px #aaaaaa;
-    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 15px 20px 10px #aaaaaa;
 }
 
 .t {
@@ -114,42 +114,25 @@ div.portfolio-box {
 .d {
     transform: rotate(4deg);
     }
-.show-more {
+
+.show-more-button {
+    position: relative;
     float: right;
-    height: 60px;
+    height:42px;
+    width: 100px;
+    background-color:white;
+    border-color: white;
+    border-left: black 4px green;
 }
 
-
-.image-wrapper {
-    width:100%;
-    height: 250px;
-    border: blue 1px solid;
-}
-/* .image-wrapper-ccimage {
-    background-image: url(images/codeclan_logo.png);
-    background-size: 30% 
-    background-repeat: no-repeat;
-    border: solid 1px red;
-} */
-
-/* .about-me {
-    padding: 0.3rem 0.3rem 0.5rem 0.5rem;
-    background: #5d85a5
-    linear-gradient(
-    to bottom,
-    #c8dbe9,
-    #b7c3ce calc(50% - 10px),
-    #f1f2f8
-  );
-} */
 
 
 
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
    }
 
 
