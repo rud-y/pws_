@@ -28,29 +28,52 @@
         <section class="section about-me">
             <div id="about">
                 <h2>Something about me</h2>
-                <p>My name is Rudy and I like exploring and learning new technologies. AAABBBBCCCC</p>
+                <p>My name's Rudy and I like programming and learning new technologies.</p>
             </div>
         </section> 
         
-        <section class="section portfolio">
+        <section class="section portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-container">
                 <div class="portfolio-box t">
                     <img class="portfolio-images" src="images/tournament_manager_pic.png" width="350" height="250" alt="Tournament Manager">
                     <hr>
-                    <p class="caption">Tournament manager</p><button class="show-more-button">Show more</button>
+                    <p class="caption">Tournament manager</p>
+                    <a class="show-more" href="#tournament">Show more</a>
                 </div>
                 <div class="portfolio-box v">
-                    <img class="portfolio-images" src="images/paw.svg" width="350" height="250" alt="Veterinary Practice">
+                    <img class="portfolio-images" src="images/paw.svg" width="300" height="200" alt="Veterinary Practice">
                     <hr>
                     <p class="caption">Vet Management app</p>
+                    <a class="show-more" href="#vet">Show more</a>
                 </div>
                 <div class="portfolio-box d">
                     <img class="portfolio-images" src="images/dobble_pic.png" width="350" height="250" alt="Dobble">
                     <hr>
                     <p class="caption">Dobble browser game</p>
+                    <a class="show-more" href="#dobble">Show more</a>
                 </div>
             </div>
+        </section>
+
+        <section class="section listings">
+            <div class="tournament" id="tournament">
+                <h2>Tournament manager</h2>
+                
+                <p>Tournament manager application designed not only for sports enthusiasts. A user can manage different tournaments by adding new tournaments, teams and creating new matches: either fixtures or results. After match is submitted then the correspondent league table is updated and the teams in it sorted according to points they earned.</p>
+            </div>
+
+            <div id="vet">
+                <h2>Vet management app</h2>
+                <p>Application for managing a small veterinary practice...</p>
+            </div>
+
+            <div id="dobble">
+                <h2>Dobble - browser game</h2>
+                <p>Dobble app is a browser adaptation of a card game Dobble (Spot it - US).</p>
+            </div>
+
+
         </section>
 
         <section class="section">   
@@ -63,5 +86,10 @@
             </div>
            </div>
         </section>
+
+        <hr />
+        <p aria-hidden="true">
+            Some things are better left unsaid.
+          </p>
     </body>
 </html>
