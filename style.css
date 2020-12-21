@@ -8,9 +8,12 @@ body {
   font-family: "Port Lligat Sans", sans-serif;
   font-family: "Sniglet", cursive;
 }
-/* *, *::before, *::after {
-    box-sizing: inherit;
-} */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 h2 {
   text-align: center;
@@ -29,26 +32,30 @@ h2 {
 /* .logo-div {
   width: 500px;
   height: 100px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  border: solid red 1px;
-} */
+}  */
 
 #logo {
-  position: fixed;
-  margin: 0 auto;
+  position: relative;
+  max-width: 190px;
   font-size: 30px;
   border: solid black 1px;
+  animation: moveRight 5s infinite;
+}
+#logo:hover {
+  animation-play-state: paused;
+}
+
+@keyframes moveRight {
+  from {
+    right: -275px;
+  }
+  to {
+    right: 0px;
+  }
 }
 #logo > a {
   text-decoration: none;
   color: black;
-}
-#logo:hover {
-  animation-name: slide;
-  animation-duration: 400ms;
-  animation-direction: normal;
-  animation-timing-function: linear;
 }
 
 ul {
@@ -69,7 +76,7 @@ ul > li {
   text-decoration: none;
 }
 .a-nav:hover {
-  border-bottom: 6px solid black;
+  border-bottom: 4px solid black;
   color: black;
   font-size: 18px;
 }
@@ -81,6 +88,7 @@ ul > li {
 }
 
 .about-me {
+  border: solid blue 1px;
   background: rgb(192, 196, 197);
   padding: 0.3rem 0.3rem 0.5rem 0.5rem;
 }
@@ -92,7 +100,6 @@ ul > li {
 }
 
 .portfolio-container {
-  background-color: rgb(236, 241, 240);
   border: solid 1px rgb(112, 110, 110);
   display: flex;
   flex-flow: row wrap;
@@ -102,29 +109,38 @@ ul > li {
   width: 350px;
   padding: 15px 15px 15px 15px;
   margin: 25px;
-  border: 2px solid #b8b7b7;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 15px 20px 10px #aaaaaa;
+  background-color: rgb(228, 228, 236);
+  box-shadow: 15px 20px 20px #aaaaaa;
+}
+.portfolio-box:hover {
+  box-shadow: 5px 5px 10px #868684;
+  background-color: rgb(180, 175, 175);
 }
 
 .t {
-  transform: rotate(4deg);
+  transform: rotate(3deg);
 }
 .v {
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
 }
 .d {
-  transform: rotate(4deg);
+  transform: rotate(3deg);
 }
 
-.show-more-button {
+.show-more {
   position: relative;
   float: right;
-  height: 42px;
-  width: 100px;
-  background-color: white;
-  border-color: white;
-  border-left: black 4px green;
+  text-decoration: none;
+  color: black;
+}
+.show-github {
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: black;
+}
+.show:hover {
+  text-decoration: underline;
 }
 
 .wrapper {

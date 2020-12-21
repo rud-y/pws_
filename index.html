@@ -13,9 +13,9 @@
     <body>
         <section id="header-section">
             <div class="navigation-bar">
-                <div class="logo-div">
-                    <p id="logo"><a href="#">Rudolf Zachar</a></p>
-                </div>
+                <a href="#"><div class="logo-div">
+                    <p id="logo"><a id="meno" >Rudolf Zachar</a></p>
+                </div></a>
                 
                 <ul id="ul-nav">
                     <li><a class="a-nav" href="#aboutme" title="link About">About</a></li>
@@ -24,6 +24,8 @@
                 </ul>
             </div>
         </section>
+
+        <div id="output"></div>
 
         <section class="section about-me">
             <div id="about">
@@ -36,21 +38,24 @@
             <h2>Portfolio</h2>
             <div class="portfolio-container">
                 <div class="portfolio-box t">
+                    <h4 class="caption">Tournament manager</h4><hr />
+                    <a class="show show-more" href="#tournament">Show more</a>
+                    <p>
+                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_client">GitHub-client</a><br />
+                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_server">GitHub-server</a><br />
+                    </p>
                     <img class="portfolio-images" src="images/tournament_manager_pic.png" width="350" height="250" alt="Tournament Manager">
-                    <hr>
-                    <p class="caption">Tournament manager</p>
-                    <a class="show-more" href="#tournament">Show more</a>
                 </div>
                 <div class="portfolio-box v">
                     <img class="portfolio-images" src="images/paw.svg" width="300" height="200" alt="Veterinary Practice">
                     <hr>
-                    <p class="caption">Vet Management app</p>
+                    <h4 class="caption">Vet Management app</h4>
                     <a class="show-more" href="#vet">Show more</a>
                 </div>
                 <div class="portfolio-box d">
                     <img class="portfolio-images" src="images/dobble_pic.png" width="350" height="250" alt="Dobble">
                     <hr>
-                    <p class="caption">Dobble browser game</p>
+                    <h4 class="caption">Dobble browser game</h4>
                     <a class="show-more" href="#dobble">Show more</a>
                 </div>
             </div>
@@ -89,7 +94,11 @@
 
         <hr />
         <p aria-hidden="true">
-            Some things are better left unsaid.
+            Some things atter left unsaid.
           </p>
+          <footer>
+              <p>Made by Rudolf Zachar 2020 <span></span></p>
+              
+            </footer>
     </body>
 </html>
