@@ -11,11 +11,14 @@
 
     </head>
     <body>
-        <section id="header-section">
+        <main>
+        <div id="header-section">
             <div class="navigation-bar">
-                <a href="#"><div class="logo-div">
-                    <p id="logo"><a id="meno" >Rudolf Zachar</a></p>
-                </div></a>
+                
+                <div id="logo-div">
+                    <p id="logo">Hi! I'm Rudy</p>
+                </div>
+                
                 
                 <ul id="ul-nav">
                     <li><a class="a-nav" href="#aboutme" title="link About">About</a></li>
@@ -23,7 +26,7 @@
                     <li><a class="a-nav" href="#contact" title="link Contact">Contact</a></li>
                 </ul>
             </div>
-        </section>
+        </div>
 
         <div id="output"></div>
 
@@ -37,26 +40,33 @@
         <section class="section portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-container">
+
                 <div class="portfolio-box t">
                     <h4 class="caption">Tournament manager</h4><hr />
                     <a class="show show-more" href="#tournament">Show more</a>
                     <p>
-                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_client">GitHub-client</a><br />
-                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_server">GitHub-server</a><br />
+                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_client">Go to GitHub-client</a><br />
+                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_server">Go to GitHub-server</a>
+                        <br />
                     </p>
-                    <img class="portfolio-images" src="images/tournament_manager_pic.png" width="350" height="250" alt="Tournament Manager">
+                    <img class="portfolio-images" src="images/tournament_manager_pic.png" width="300" height="200" alt="Tournament Manager">
                 </div>
+
                 <div class="portfolio-box v">
-                    <img class="portfolio-images" src="images/paw.svg" width="300" height="200" alt="Veterinary Practice">
-                    <hr>
-                    <h4 class="caption">Vet Management app</h4>
-                    <a class="show-more" href="#vet">Show more</a>
+                    <h4 class="caption">Vet Management app</h4><hr />
+                    <p><a class="show show-github" href="https://github.com/rud-y/Veterinary_practice_project">Go to GitHub</a>
+                        <a class="show show-more" href="#vet">Show more</a>
+                    </p><br />
+                    <img class="portfolio-images" src="images/pet_pic.png" width="300" height="200" alt="Veterinary Practice" />
                 </div>
+
                 <div class="portfolio-box d">
-                    <img class="portfolio-images" src="images/dobble_pic.png" width="350" height="250" alt="Dobble">
-                    <hr>
-                    <h4 class="caption">Dobble browser game</h4>
-                    <a class="show-more" href="#dobble">Show more</a>
+                    <h4 class="caption">Dobble browser game</h4><hr />
+                    <p>
+                        <a class="show show-github" href="https://github.com/rud-y/dobble">Go to GitHub</a>
+                        <a class="show show-more" href="#dobble">Show more</a>
+                    </p><br />
+                    <img class="portfolio-images" src="images/dobble_pic.png" width="300" height="200" alt="Dobble" /> 
                 </div>
             </div>
         </section>
@@ -64,7 +74,6 @@
         <section class="section listings">
             <div class="tournament" id="tournament">
                 <h2>Tournament manager</h2>
-                
                 <p>Tournament manager application designed not only for sports enthusiasts. A user can manage different tournaments by adding new tournaments, teams and creating new matches: either fixtures or results. After match is submitted then the correspondent league table is updated and the teams in it sorted according to points they earned.</p>
             </div>
 
@@ -100,5 +109,6 @@
               <p>Made by Rudolf Zachar 2020 <span></span></p>
               
             </footer>
+        </main>
     </body>
 </html>

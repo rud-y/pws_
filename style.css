@@ -22,32 +22,45 @@ h2 {
 .navigation-bar {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px;
   margin-bottom: 1rem;
-  /* background-image: url(images/edi_sunt.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat; */
+  background-image: linear-gradient(#f4f4f2, #bbbfca);
 }
 
-/* .logo-div {
-  width: 500px;
-  height: 100px;
-}  */
+/* textarea {
+  font-size: 24px;
+  border:5px solid black;
+  padding: 1rem 1rem;
+  min-height: 3em;
+  resize: both;
+  background: #ffd73e33;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+} */
 
-#logo {
+#logo-div {
+  width: fit-content;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  resize: both;
+  border: 5px solid black;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 8s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
+}
+
+#logo-div {
   position: relative;
-  max-width: 190px;
-  font-size: 30px;
-  border: solid black 1px;
-  animation: moveRight 5s infinite;
+  max-width: 220px;
+  font-size: 28px;
+  animation: moveRight 10s infinite;
 }
-#logo:hover {
+#logo-div:hover {
   animation-play-state: paused;
 }
 
 @keyframes moveRight {
   from {
-    right: -275px;
+    right: -250px;
   }
   to {
     right: 0px;
@@ -58,14 +71,26 @@ h2 {
   color: black;
 }
 
-ul {
+#ul-nav {
   position: relative;
   float: right;
   padding: 10px;
   /* border-bottom: 2px solid black; */
+  animation: moveLeft 10s infinite;
+}
+#ul-nav:hover {
+  animation-play-state: paused;
+}
+@keyframes moveLeft {
+  from {
+    left: -180px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
-ul > li {
+#ul-nav > li {
   list-style: none;
   display: inline;
   padding: 5px;
@@ -84,13 +109,12 @@ ul > li {
 .section {
   width: 100%;
   height: 450px;
-  padding: 15px 15px 20px 20px;
+  padding: 10px 10px 15px 15px;
 }
 
 .about-me {
   border: solid blue 1px;
-  background: rgb(192, 196, 197);
-  padding: 0.3rem 0.3rem 0.5rem 0.5rem;
+  background: rgb(221, 222, 223);
 }
 
 .portfolio {
@@ -114,7 +138,13 @@ ul > li {
 }
 .portfolio-box:hover {
   box-shadow: 5px 5px 10px #868684;
-  background-color: rgb(180, 175, 175);
+  background-color: #e6e6e9;
+}
+.portfolio-images {
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: solid 1px black;
 }
 
 .t {
@@ -127,20 +157,24 @@ ul > li {
   transform: rotate(3deg);
 }
 
-.show-more {
-  position: relative;
-  float: right;
+.show {
   text-decoration: none;
   color: black;
+  position: relative;
+}
+.show-more {
+  float: left;
 }
 .show-github {
-  position: relative;
-  float: left;
-  text-decoration: none;
-  color: black;
+  float: right;
 }
 .show:hover {
   text-decoration: underline;
+}
+#show-github-div {
+  padding: 3px;
+  width: fit-content;
+  float: right;
 }
 
 .wrapper {
@@ -149,11 +183,18 @@ ul > li {
   grid-column-gap: 15px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 595px) {
   .main-menu {
     display: none;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 982px) {
+  .portfolio-box {
+    width: 400px;
+    padding: 15px 15px 15px 15px;
+    margin: 25px;
+    background-color: rgb(228, 228, 236);
+    box-shadow: 15px 20px 20px #aaaaaa;
+  }
 }
