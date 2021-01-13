@@ -13,25 +13,18 @@
     <body>
         <main>
         <div id="header-section">
-            <div class="navigation-bar">
-                
                 <div id="logo-div">
-                    <p id="logo">Hi! I'm Rudy</p>
+                    <p id="logo">Rudy Zachar</p>
                 </div>
-                
-                
-                <ul id="ul-nav">
-                    <li><a class="a-nav" href="#aboutme" title="link About">About</a></li>
-                    <li><a class="a-nav" href="#portfolio" title="link Portfolio">Portfolio</a></li>
-                    <li><a class="a-nav" href="#contact" title="link Contact">Contact</a></li>
-                </ul>
-            </div>
+                <div id="ul-nav">
+                    <li><a class="a-nav" href="#about-me" title="About">About</a></li>
+                    <li><a class="a-nav" href="#portfolio" title="Portfolio">Portfolio</a></li>
+                    <li><a class="a-nav" href="#contact" title="Contact">Contact</a></li>
+                </div>
         </div>
 
-        <div id="output"></div>
-
         <section class="section about-me">
-            <div id="about">
+            <div id="about-me">
                 <h2>Something about me</h2>
                 <p>My name's Rudy and I like programming and learning new technologies.</p>
             </div>
@@ -41,53 +34,77 @@
             <h2>Portfolio</h2>
             <div class="portfolio-container">
 
-                <div class="portfolio-box t">
-                    <h4 class="caption">Tournament manager</h4><hr />
-                    <a class="show show-more" href="#tournament">Show more</a>
-                    <p>
-                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_client">Go to GitHub-client</a><br />
-                        <a class="show show-github" href="https://github.com/rud-y/tournament_manager_server">Go to GitHub-server</a>
-                        <br />
-                    </p>
-                    <img class="portfolio-images" src="images/tournament_manager_pic.png" width="300" height="200" alt="Tournament Manager">
-                </div>
-
                 <div class="portfolio-box v">
                     <h4 class="caption">Vet Management app</h4><hr />
                     <p><a class="show show-github" href="https://github.com/rud-y/Veterinary_practice_project">Go to GitHub</a>
-                        <a class="show show-more" href="#vet">Show more</a>
+                        <a class="show show-more" href="#vet-listing">Show more</a>
                     </p><br />
-                    <img class="portfolio-images" src="images/pet_pic.png" width="300" height="200" alt="Veterinary Practice" />
+                    <img class="portfolio-images" src="images/pets__img.png" width="270" height="180" alt="Veterinary Practice" />
+                </div>
+
+                <div class="portfolio-box t">
+                    <h4 class="caption">Tournament manager</h4>
+                    <hr />
+                    <a class="show show-more" href="#tournament-listing">Show more</a>
+                
+                    <a class="show show-github" href="https://github.com/rud-y/tournament_manager_client">Go to GitHub-client</a>
+                    <a class="show show-github" href="https://github.com/rud-y/tournament_manager_server">GitHub server</a>
+                    <img class="portfolio-images" src="images/tournament_manager_pic.png" width="270" height="200"
+                        alt="Tournament Manager">
                 </div>
 
                 <div class="portfolio-box d">
                     <h4 class="caption">Dobble browser game</h4><hr />
                     <p>
                         <a class="show show-github" href="https://github.com/rud-y/dobble">Go to GitHub</a>
-                        <a class="show show-more" href="#dobble">Show more</a>
+                        <a class="show show-more" href="#dobble-listing">Show more</a>
                     </p><br />
-                    <img class="portfolio-images" src="images/dobble_pic.png" width="300" height="200" alt="Dobble" /> 
+                    <img class="portfolio-images" src="images/dobble_pic.png" width="270" height="200" alt="Dobble" /> 
                 </div>
             </div>
         </section>
 
         <section class="section listings">
-            <div class="tournament" id="tournament">
-                <h2>Tournament manager</h2>
+          <h2>Vet management app</h2>
+          <div id="vet-listing" class="listing">
+              <div>
+                <p>
+                  An application for managing a small veterinary practice. A user is able to create, edit and delete pets, customers and vets. Appointments can be arranged for certain vet and a pet patient.
+                </p>
+              </div>
+
+              <div>
+                <video class="vid-img-listing" width="350" height="250" controls>
+                  <source src="demos/jaws_demo.mp4" type="video/mp4">
+                </video>
+              </div>
+          </div>
+
+            <h2>Tournament manager</h2>
+            <div id="tournament-listing" class="listing">
+              <div>
+                <img class="vid-img-listing" src="images/tournament_manager_pic.png" width="350" height="250">
+              </div>
+              <div>
                 <p>Tournament manager application designed not only for sports enthusiasts. A user can manage different tournaments by adding new tournaments, teams and creating new matches: either fixtures or results. After match is submitted then the correspondent league table is updated and the teams in it sorted according to points they earned.</p>
+              </div>
             </div>
 
-            <div id="vet">
-                <h2>Vet management app</h2>
-                <p>Application for managing a small veterinary practice...</p>
-            </div>
-
-            <div id="dobble">
+            <div id="dobble-listing" class="listing">
                 <h2>Dobble - browser game</h2>
-                <p>Dobble app is a browser adaptation of a card game Dobble (Spot it - US).</p>
+                <p>Dobble app is a browser adaptation of a card game Dobble.</p>
+                <div>
+                  <img class="vid-img-listing" src="" alt="">
+                </div>
             </div>
+        </section>
 
-
+        <section class="section" id="contact">
+            
+            <h3 id="form-heading">Get in touch</h3>
+            <div id="contacts">
+                <a href=""><img src=""></a>
+            </div>
         </section>
 
         <section class="section">   
@@ -102,11 +119,8 @@
         </section>
 
         <hr />
-        <p aria-hidden="true">
-            Some things atter left unsaid.
-          </p>
           <footer>
-              <p>Made by Rudolf Zachar 2020 <span></span></p>
+              <p>&#169 2020 Rudolf Zachar <span></span></p>
               
             </footer>
         </main>

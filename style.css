@@ -19,40 +19,30 @@ h2 {
   text-align: center;
 }
 
-.navigation-bar {
+#header-section {
   position: relative;
   width: 100%;
   height: 300px;
-  margin-bottom: 1rem;
   background-image: linear-gradient(#f4f4f2, #bbbfca);
+  border: 1px solid black;
 }
 
-/* textarea {
-  font-size: 24px;
-  border:5px solid black;
-  padding: 1rem 1rem;
-  min-height: 3em;
-  resize: both;
-  background: #ffd73e33;
-  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
-} */
-
+.navigation-bar {
+  border: solid 1px pink;
+}
 #logo-div {
   width: fit-content;
-  height: 80px;
+  height: 60px;
   margin-bottom: 10px;
   padding: 0.5rem;
   resize: both;
-  border: 5px solid black;
-  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 8s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
-    1;
 }
 
 #logo-div {
   position: relative;
   max-width: 220px;
   font-size: 28px;
-  animation: moveRight 10s infinite;
+  animation: moveRight 8s infinite;
 }
 #logo-div:hover {
   animation-play-state: paused;
@@ -60,7 +50,7 @@ h2 {
 
 @keyframes moveRight {
   from {
-    right: -250px;
+    right: -180px;
   }
   to {
     right: 0px;
@@ -76,18 +66,6 @@ h2 {
   float: right;
   padding: 10px;
   /* border-bottom: 2px solid black; */
-  animation: moveLeft 10s infinite;
-}
-#ul-nav:hover {
-  animation-play-state: paused;
-}
-@keyframes moveLeft {
-  from {
-    left: -180px;
-  }
-  to {
-    left: 0px;
-  }
 }
 
 #ul-nav > li {
@@ -103,18 +81,19 @@ h2 {
 .a-nav:hover {
   border-bottom: 4px solid black;
   color: black;
-  font-size: 18px;
 }
 
 .section {
   width: 100%;
-  height: 450px;
-  padding: 10px 10px 15px 15px;
+  height: fit-content;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 25px;
+  border: solid 1px black;
 }
 
 .about-me {
   border: solid blue 1px;
-  background: rgb(221, 222, 223);
+  background: white;
 }
 
 .portfolio {
@@ -124,7 +103,7 @@ h2 {
 }
 
 .portfolio-container {
-  border: solid 1px rgb(112, 110, 110);
+  border: solid 1px green;
   display: flex;
   flex-flow: row wrap;
 }
@@ -134,33 +113,38 @@ h2 {
   padding: 15px 15px 15px 15px;
   margin: 25px;
   background-color: rgb(228, 228, 236);
-  box-shadow: 15px 20px 20px #aaaaaa;
+  box-shadow: 15px 20px 15px #aaaaaa;
 }
 .portfolio-box:hover {
-  box-shadow: 5px 5px 10px #868684;
-  background-color: #e6e6e9;
+  box-shadow: 5px 5px 10px #696965;
+  background-color: white;
+  transition: all 1s ease-out;
 }
 .portfolio-images {
   display: block;
   margin: 0 auto;
   border-radius: 3px;
-  border: solid 1px black;
 }
 
-.t {
+.v {
   transform: rotate(3deg);
 }
-.v {
+.t {
   transform: rotate(-3deg);
 }
 .d {
   transform: rotate(3deg);
 }
 
+.caption {
+  text-align: center;
+}
+
 .show {
   text-decoration: none;
   color: black;
   position: relative;
+  margin-bottom: 15px;
 }
 .show-more {
   float: left;
@@ -177,23 +161,35 @@ h2 {
   float: right;
 }
 
+button {
+  width: 300px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
+  justify-content: center;
+}
+video {
+  border: 2px grey solid;
+}
+.vid-img-listing {
+  box-shadow: 15px 20px 15px #aaaaaa;
 }
 
 @media screen and (max-width: 595px) {
-  .main-menu {
-    display: none;
-  }
 }
 
-@media screen and (min-width: 982px) {
+@media screen and (min-width: 989px) {
   .portfolio-box {
     width: 400px;
-    padding: 15px 15px 15px 15px;
-    margin: 25px;
+    margin: 20px;
     background-color: rgb(228, 228, 236);
     box-shadow: 15px 20px 20px #aaaaaa;
   }
