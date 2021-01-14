@@ -3,10 +3,11 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Fondamento", cursive;
-  font-family: "Fredericka the Great", cursive;
-  font-family: "Port Lligat Sans", sans-serif;
-  font-family: "Sniglet", cursive;
+  font-family: "IM Fell Great Primer", serif;
+  font-family: "Rhodium Libre", serif;
+}
+main {
+  margin-top: 40px;
 }
 
 *,
@@ -15,95 +16,69 @@ body {
   box-sizing: inherit;
 }
 
-h2 {
+h2,
+h3 {
   text-align: center;
 }
 
-#header-section {
+#logo-div {
   position: relative;
   width: 100%;
   height: 300px;
-  background-image: linear-gradient(#f4f4f2, #bbbfca);
-  border: 1px solid black;
-}
-
-.navigation-bar {
-  border: solid 1px pink;
-}
-#logo-div {
-  width: fit-content;
-  height: 60px;
-  margin-bottom: 10px;
   padding: 0.5rem;
-  resize: both;
+  background-image: linear-gradient(rgb(160, 155, 155), white);
 }
 
-#logo-div {
-  position: relative;
-  max-width: 220px;
+#logo {
+  /* position: relative; */
+  max-width: 300px;
   font-size: 28px;
-  animation: moveRight 8s infinite;
-}
-#logo-div:hover {
-  animation-play-state: paused;
-}
-
-@keyframes moveRight {
-  from {
-    right: -180px;
-  }
-  to {
-    right: 0px;
-  }
 }
 #logo > a {
   text-decoration: none;
   color: black;
 }
 
-#ul-nav {
-  position: relative;
-  float: right;
-  padding: 10px;
-  /* border-bottom: 2px solid black; */
+#nav {
+  position: fixed;
+  right: 0;
+  top: 4px;
 }
-
-#ul-nav > li {
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(rgb(50, 53, 51), rgb(70, 73, 75));
+}
+#nav > li {
   list-style: none;
   display: inline;
-  padding: 5px;
+  font-size: 1.2rem;
   margin-right: 40px;
 }
 .a-nav {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 }
 .a-nav:hover {
-  border-bottom: 4px solid black;
-  color: black;
+  color: whitesmoke;
+  text-decoration: underline darkgray 3px solid;
 }
 
 .section {
   width: 100%;
   height: fit-content;
-  padding: 15px 15px 15px 15px;
-  margin-bottom: 25px;
-  border: solid 1px black;
+  padding: 35px 15px;
 }
 
-.about-me {
-  border: solid blue 1px;
-  background: white;
-}
-
+.about-me,
 .portfolio {
-  border: red solid 1px;
-  padding: 0 20px 20px 20px;
   height: inherit;
 }
 
 .portfolio-container {
-  border: solid 1px green;
   display: flex;
   flex-flow: row wrap;
 }
@@ -124,6 +99,10 @@ h2 {
   display: block;
   margin: 0 auto;
   border-radius: 3px;
+}
+
+.portfolio {
+  background-color: beige;
 }
 
 .v {
@@ -165,32 +144,38 @@ button {
   width: 300px;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-}
 .listing {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 15px;
-  justify-content: center;
+  grid-column-gap: 25px;
+  margin-bottom: 70px;
 }
-video {
-  border: 2px grey solid;
-}
+
 .vid-img-listing {
   box-shadow: 15px 20px 15px #aaaaaa;
+  border: 2px grey solid;
+}
+.vid-img-listing:hover {
+  transition: all 1s ease-out;
+}
+.fab {
+  font-size: 45px;
 }
 
-@media screen and (max-width: 595px) {
+#contact-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media screen and (min-width: 989px) {
+@media screen and (max-width: 800px) {
+  .listing {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 980px) {
   .portfolio-box {
-    width: 400px;
+    width: 390px;
     margin: 20px;
-    background-color: rgb(228, 228, 236);
-    box-shadow: 15px 20px 20px #aaaaaa;
   }
 }
