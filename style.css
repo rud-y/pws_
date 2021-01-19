@@ -7,7 +7,9 @@ body {
   font-family: "Rhodium Libre", serif;
 }
 main {
-  margin-top: 40px;
+  position: fixed;
+  top: 40;
+  /* margin-top: 40px; */
 }
 
 *,
@@ -74,8 +76,6 @@ p {
   height: fit-content;
   padding: 35px 15px;
 }
-.about-me {
-}
 .about-me,
 .portfolio {
   height: inherit;
@@ -95,7 +95,7 @@ p {
   width: 350px;
   padding: 15px 15px 15px 15px;
   margin: 25px;
-  background-color: #bbbfca;
+  background-color: #e0e3e9;
   box-shadow: 15px 20px 15px #aaaaaa;
 }
 .portfolio-box:hover {
@@ -186,6 +186,9 @@ button {
   margin: 10px;
 }
 
+#contact-facts {
+  /* background-color: #eeeed8; */
+}
 @media screen and (max-width: 800px) {
   .listing {
     grid-template-columns: 1fr;
