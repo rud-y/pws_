@@ -18,11 +18,15 @@ main {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 p {
   margin: 0;
+}
+a {
+  line-height: 0.6rem;
 }
 
 #logo-div {
@@ -133,15 +137,15 @@ p {
 }
 .show-github {
   float: right;
-  text-align: right;
 }
 .show:hover {
-  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
 }
-.show-github-div {
+/* .show-github-div {
   background-color: green;
   display: flex;
-}
+} */
 
 .link {
   color: black;
@@ -158,10 +162,15 @@ p {
   grid-column-gap: 25px;
   margin-bottom: 70px;
 }
+#listing-heading {
+  text-shadow: lightgray 5px 10px 3px;
+}
 
 .vid-img-listing {
   box-shadow: 15px 15px 10px #aaaaaa;
   border: 2px grey solid;
+  width: 420;
+  height: 300;
 }
 .vid-img-listing:hover {
   transition: all 1s ease-out;
