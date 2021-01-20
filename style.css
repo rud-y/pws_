@@ -7,9 +7,8 @@ body {
   font-family: "Rhodium Libre", serif;
 }
 main {
-  position: fixed;
-  top: 40;
-  /* margin-top: 40px; */
+  position: relative;
+  margin-top: 40px;
 }
 
 *,
@@ -183,7 +182,7 @@ button {
 }
 .contact-logos {
   width: 25px;
-  margin: 10px;
+  margin: 15px;
 }
 
 #contact-facts {
