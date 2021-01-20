@@ -133,20 +133,25 @@ p {
 }
 .show-github {
   float: right;
+  text-align: right;
 }
 .show:hover {
   text-decoration: underline;
 }
-#show-github-div {
-  padding: 3px;
-  width: fit-content;
-  float: right;
+.show-github-div {
+  background-color: green;
+  display: flex;
 }
 
-button {
-  width: 300px;
+.link {
+  color: black;
 }
-
+.link:hover {
+  color: white;
+  background-color: #696965;
+  text-decoration: none;
+  padding: 0px 3px 0px 3px;
+}
 .listing {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -187,6 +192,10 @@ button {
 
 #contact-facts {
   /* background-color: #eeeed8; */
+}
+
+.row {
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 800px) {
   .listing {
