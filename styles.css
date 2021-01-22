@@ -77,7 +77,8 @@ a {
 .section {
   width: 100%;
   height: fit-content;
-  padding: 35px 15px;
+  padding: 35px 20px;
+  margin-bottom: 30px;
 }
 .about-me,
 .portfolio {
@@ -160,7 +161,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 25px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 #listing-heading {
   text-shadow: lightgray 5px 10px 3px;
@@ -199,22 +200,56 @@ a {
   margin: 15px;
 }
 
-#contact-facts {
-  /* background-color: #eeeed8; */
+.container {
+  padding: 0;
+}
+.row {
+  margin-bottom: 50px;
+}
+.each-col {
+  margin-bottom: 10px;
 }
 
-.row {
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 800px) {
+@media (max-width: 576px) {
+  .d-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   .listing {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-@media screen and (min-width: 980px) {
+@media (max-width: 900px) {
+  .listing {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-class {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .each-col {
+    width: fit-content;
+  }
+}
+
+/* @media screen and (min-width: 980px) {
   .portfolio-box {
     width: 390px;
     margin: 20px;
-  }
-}
+  } */
