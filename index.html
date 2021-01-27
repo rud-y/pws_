@@ -20,11 +20,12 @@
     <div id="nav">
       <li><a class="a-nav" href="#about-me" title="About">About</a></li>
       <li><a class="a-nav" href="#portfolio" title="Portfolio">Portfolio</a></li>
-      <li><a class="a-nav" href="#contact-facts" title="Contact">Contact</a></li>
+      <li><a class="a-nav" href="#contact" title="Contact">Contact</a></li>
     </div>
   </div>
 
   <main>
+
   <div id="logo-div">
     <h3 id="logo">Hi, my name's Rudy</h3>
   </div>
@@ -32,10 +33,9 @@
   <section class="section about-me" id="about-me">
     <div>
       <h2>Something about me</h2>
-      <p>My name's Rudolf Zachar and I am a thinker with curiosity which drives me to explore. I have always had passion for learning new things including foreign languages, history, literature, philosphy, accountancy, coding... Diving into the world of digital technologies as a self starter and later distance learner made me realise that what I love the most about programming is exploring and continuous learning.</p>
+      <p>My name's Rudolf Zachar and I am a thinker with curiosity which drives me to explore. I have always had passion for learning new things including foreign languages, history, literature, philosphy, accountancy, coding... Diving into the world of digital technologies as a self starter and later distance learner made me realise that what I love the most about programming is exploring, creating and continuous learning.</p>
     </div>
   </section>
-  <hr/>
 
   <section class="section portfolio" id="portfolio">
     <h2>Portfolio</h2>
@@ -48,7 +48,7 @@
           <a class="show show-github" href="https://github.com/rud-y/Veterinary_practice_project">GitHub</a>
           <a class="show show-more" href="#vet-listing">Show more</a>
         </p><br />
-        <img class="portfolio-images" src="images/pets__img.png" width="270" height="200" alt="Veterinary Practice" />
+        <img class="portfolio-images" src="images/paw.svg" width="270" height="200" alt="Veterinary Practice" />
       </div>
 
       <div class="portfolio-box t">
@@ -72,7 +72,6 @@
       </div>
     </div>
   </section>
-  <hr/>
 
   <section class="section listings" id="vet-listing">
     <h3 id="listing-heading"><strong>Vet management app</strong></h3><br />
@@ -80,48 +79,63 @@
       <div>
         <p>
           An application designed for a small veterinary practice the purpose of which is managing information about incoming 'pet patients', their owners, and a veterinary practice employees. A user can create, edit and delete details about vets,
-          customers, pets and appointments. Owners can arrange appointment for their pet with one of the vets. Check it out <span><a class="link" href="http://rzvetmanagement.herokuapp.com/home">here</a></span> or watch a short demo.
-        </p><br/>
+          customers, pets and appointments. Owners can arrange appointment for their pet with one of the vets. Go to the app or watch a short demo.
+        </p>
+        <a href="http://rzvetmanagement.herokuapp.com/home"><button class="button-link">Go to the app</button></a>
+        <br/>
+        <br />
         <p>
           <h6><strong>Languages / frameworks used:</strong></h6>
-          MVC architecture pattern utilising Ruby and Sinatra web framework for request routing and PostgreSQL for storing and editing user input data.
+          MVC architecture pattern utilising <strong>Ruby</strong> and <strong>Sinatra</strong> web framework for request routing and <strong>PostgreSQL</strong> for storing and editing user input data.
         </p><br />
       </div>
       <div>
-        <video class="vid-img-listing" width="350" height="260" controls="controls">
+        <img class="vid-img-listing" src="images/jaws_.png" width="420" height="300">
+      </div>
+
+      <figure class="figure video">
+        <figcaption class="figure-caption">Jaws vet management demo</figcaption>
+         <video class="figure-img img-fluid rounded" alt="..." controls="controls">
           <source src="demos/jaws_demo.mp4" type="video/mp4">
         </video>
-      </div>
+      </figure>
+       
+
+
     </div>
-    <hr/>
   </section>
 
   <section class="section listings" id="tournament-listing">
     <h3 id="listing-heading"><strong>Tournament manager</strong></h3><br />
-    <div class="listing">
-      <div>
-        <p>
-          Tournament manager application is designed mainly for sports enthusiasts who want to keep statistics of their own league. It was built as a pair project during my CodeClan course. A huge credit to Robert Peacock - classmate without whom the project would not exist as it is today.
-        </p>
-        <p>
-          A user can manage different tournaments by
-          adding new tournaments, teams and creating new matches: first fixtures, then results. After match score is submitted the correspondent league table is updated with wins, draws or losses and the teams in a table sorted according to points earned.
-        </p><br />
-        <h6><strong>Languages / frameworks used:</strong></h6>
-        <p>
-          The back-end - <strong>Spring</strong> framework with Hibernate - Object Relational Mapping.
-        </p>
-        <p>
-          <strong>React.js</strong> is used as a front-end framework.
-        </p><br />
+    <div class="container">
+    <div class="row custom-class">
+      <div class="col-6 each-col">
+        <div>
+          <p>
+            Tournament manager application is designed mainly for sports enthusiasts who want to keep statistics of their own league. It was built as a pair project during my CodeClan course. A huge credit to Robert Peacock - classmate without whom the project would not exist as it is today.
+          </p>
+          <p>
+            A user can manage different tournaments by
+            adding new tournaments, teams and creating new matches: first fixtures, then results. After match score is submitted the correspondent league table is updated with wins, draws or losses and the teams in a table sorted according to points earned.
+          </p><br />
+          <h6><strong>Languages / frameworks used:</strong></h6>
+          <p>
+            The back-end - <strong>Spring</strong> framework with Hibernate - Object Relational Mapping.
+          </p>
+          <p>
+            <strong>React.js</strong> is used as a front-end framework.
+          </p><br />
+        </div>
       </div>
-      <div>
-        <img class="vid-img-listing" src="images/tournament/homepage.png" width="420" height="300">
+      <div class="col-6 each-col">
+        <div>
+          <img class="img-fluid vid-img-listing" alt="..." src="images/tournament/homepage.png">
+        </div>
       </div>
     </div>
+    <br />
 
-    <h4></h4><br />
-      <div class="container">
+    <h4>Dashboard:</h4><br />
       <div class="row custom-class">
   <div class="col-6 each-col">
     <div class="card">
@@ -198,7 +212,6 @@
     </div>
 </div>
 </div>
-    <hr/>
   </section>
 
   <section class="section listings" id="dobble-listing">
@@ -216,9 +229,8 @@
       </div>
     </div>
   </section>
-  <hr/>
 
-  <section class="section " id="contact-facts">
+  <section class="section " id="contact">
     <h3>You can find me on...</h3>
     <div id="contact-items">
       <div class="contact-logos">
@@ -232,7 +244,6 @@
       </div>
     </div>
   </section>
-  <hr />
 
   <footer>
     <p>&#169 2020 Rudolf Zachar <span></span></p>
