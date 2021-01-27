@@ -75,11 +75,13 @@
 
   <section class="section listings" id="vet-listing">
     <h3 id="listing-heading"><strong>Vet management app</strong></h3><br />
-    <div class="listing">
+    <div class="container">
+    <div class="row custom-class">
+    <div class="col-6 each-col">
       <div>
         <p>
           An application designed for a small veterinary practice the purpose of which is managing information about incoming 'pet patients', their owners, and a veterinary practice employees. A user can create, edit and delete details about vets,
-          customers, pets and appointments. Owners can arrange appointment for their pet with one of the vets. Go to the app or watch a short demo.
+          customers, pets and appointments. Owners can arrange appointment for their pet with one of the vets. Go to the app or watch a short demo below.
         </p>
         <a href="http://rzvetmanagement.herokuapp.com/home"><button class="button-link">Go to the app</button></a>
         <br/>
@@ -89,8 +91,13 @@
           MVC architecture pattern utilising <strong>Ruby</strong> and <strong>Sinatra</strong> web framework for request routing and <strong>PostgreSQL</strong> for storing and editing user input data.
         </p><br />
       </div>
+    </div>
+    <div class="col-6 each-col">
       <div>
-        <img class="vid-img-listing" src="images/jaws_.png" width="420" height="300">
+        <img class="img-fluid vid-img-listing" src="images/jaws.png">
+      </div>
+      </div>
+      </div>
       </div>
 
       <figure class="figure video">
@@ -100,9 +107,6 @@
         </video>
       </figure>
        
-
-
-    </div>
   </section>
 
   <section class="section listings" id="tournament-listing">
@@ -136,7 +140,7 @@
     <br />
 
     <h4>Dashboard:</h4><br />
-      <div class="row custom-class">
+  <div class="row custom-class">
   <div class="col-6 each-col">
     <div class="card">
       <img src="images/tournament/tournament_submit.png"  height="" class="card-img-top" alt="">
@@ -216,18 +220,32 @@
 
   <section class="section listings" id="dobble-listing">
     <h3 id="listing-heading"><strong>Dobble</strong></h3><br />
-    <div class="listing">
+    <div class="container">
+    <div class="row custom-class">
+      <div class="col-6 each-col">
       <div>
       <p>Dobble application is a browser adaptation of a card game Dobble built as a team project. Special thanks and huge credit going to teammates Helena Kolberg, Stephen Herd and Tomek Nawrocki - enthusiastic collaborators and great teamworkers.</p><br />
 
       <h6><strong>Languages / frameworks used:</strong></h6>
-      <p>Front-end: Vue.js</p>
-      <p>Back-end: Express server, MongoDB</p>
+      <p>Front-end: <strong>Vue.js</strong></p>
+      <p>Back-end: <strong>Express server</strong>, <strong>MongoDB</strong>
+      </p>
       </div>
+      </div>
+      <div class="col-6 each-col">
       <div>
-        <img class="vid-img-listing" src="images/dobble_pic.png" alt="" width="420" height="300">
+        <img class="img-fluid vid-img-listing" src="images/dobble_pic.png" alt="">
+      </div>
       </div>
     </div>
+    </div>
+
+      <figure class="figure video">
+        <figcaption class="figure-caption">Dobble demo</figcaption>
+         <video class="figure-img img-fluid rounded" alt="..." controls="controls">
+          <source src="demos/dobble_demo.mp4" type="video/mp4">
+        </video>
+      </figure>
   </section>
 
   <section class="section " id="contact">
@@ -246,7 +264,7 @@
   </section>
 
   <footer>
-    <p>&#169 2020 Rudolf Zachar <span></span></p>
+    <p>&#1692020 Rudolf Zachar <span></span></p>
   </footer>
   </main>
 </body>

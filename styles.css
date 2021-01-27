@@ -84,16 +84,16 @@ a {
   height: inherit;
 }
 #about-me {
-  background-color: #f1ecbb;
+  background-color: #eeebd5;
 }
 #vet-listing {
-  background-color: #b8b8b1;
+  background-color: #ebebe3;
 }
 #tournament-listing {
-  background-color: #d7f1de;
+  background-color: #d2d0ec;
 }
 #dobble-listing {
-  background-color: #eed2e5;
+  background-color: #f8eaf4;
 }
 .portfolio {
   background-color: #f4f4f2;
@@ -175,17 +175,23 @@ a {
 }
 
 #listing-heading {
-  text-shadow: lightgray 5px 10px 3px;
+  text-shadow: gray 4px 6px 8px;
 }
 
 .vid-img-listing {
-  box-shadow: 15px 15px 10px #aaaaaa;
+  border: 5px inset lightgray;
+  border-radius: 5px;
   /* width: 420px;
   height: 300px; */
 }
-
-figure .video {
+.video {
+  display: block;
   margin: 0 auto;
+  max-width: 550px;
+}
+.figure-caption {
+  text-align: center;
+  font-weight: bold;
 }
 
 .fab {
@@ -216,7 +222,7 @@ figure .video {
   padding: 0;
 }
 .row {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .each-col {
   margin-bottom: 10px;
@@ -238,7 +244,7 @@ figure .video {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .listing {
     display: flex;
     flex-flow: column wrap;
