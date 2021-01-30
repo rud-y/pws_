@@ -32,8 +32,12 @@ a {
 #logo-div {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
   padding: 0.5rem;
+  background-image: url("images/PANO_scotland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #logo {
@@ -86,14 +90,18 @@ a {
 #about-me {
   background-color: #eeebd5;
 }
+#about-me p {
+  border: solid 1px rgb(70, 73, 75);
+  box-shadow: -10px -10px 10px rgb(70, 73, 75);
+}
 #vet-listing {
-  background-color: #ebebe3;
+  background-color: #d8cfbd;
 }
 #tournament-listing {
-  background-color: #d2d0ec;
+  background-color: whitesmoke;
 }
 #dobble-listing {
-  background-color: #f8eaf4;
+  background-color: #f0e098;
 }
 .portfolio {
   background-color: #f4f4f2;
@@ -110,7 +118,7 @@ a {
   padding: 15px 15px 15px 15px;
   margin: 25px;
   background-color: #e0e3e9;
-  box-shadow: 15px 20px 15px #aaaaaa;
+  box-shadow: 20px 15px 15px #aaaaaa;
 }
 .portfolio-box:hover {
   box-shadow: 5px 5px 10px #696965;
@@ -164,34 +172,36 @@ a {
   height: 25px;
 }
 .button-link:hover {
-  transition: all 1s ease;
+  /* transition: all 1s ease; */
   font-weight: bolder;
   background-color: rgb(144, 187, 170);
 }
-.listing {
+/* .listing {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 25px;
-}
+} */
 
 #listing-heading {
   text-shadow: gray 4px 6px 8px;
 }
 
 .vid-img-listing {
-  border: 5px inset lightgray;
-  border-radius: 5px;
-  /* width: 420px;
-  height: 300px; */
+  /* border: solid 5px black; */
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-.video {
+.video-box {
   display: block;
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 600px;
 }
 .figure-caption {
   text-align: center;
   font-weight: bold;
+}
+.video {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .fab {
@@ -205,6 +215,10 @@ a {
 }
 .fa-twitter-square {
   color: #00acee;
+}
+
+#contact {
+  border-top: solid 2px black;
 }
 
 #contact-items {
@@ -227,6 +241,16 @@ a {
 .each-col {
   margin-bottom: 10px;
 }
+.card {
+  box-shadow: 8px 10px 15px darkgrey;
+  background-color: rgb(235, 229, 243);
+}
+.card-title {
+}
+
+footer p {
+  text-align: center;
+}
 
 @media (max-width: 576px) {
   .d-flex {
@@ -245,14 +269,8 @@ a {
 }
 
 @media (max-width: 900px) {
+  .custom-class,
   .listing {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .custom-class {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
