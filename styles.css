@@ -91,9 +91,17 @@ a {
   background-color: #eeebd5;
 }
 #about-me p {
-  border: solid 1px rgb(70, 73, 75);
+  /* border: solid 1px rgb(70, 73, 75); */
   box-shadow: -10px -10px 10px rgb(70, 73, 75);
+  padding: 12px;
 }
+
+.description {
+  box-shadow: -1px -1px 3px rgb(61, 62, 63);
+  padding: 12px;
+  /* border-radius: 25px; */
+}
+
 #vet-listing {
   background-color: #d8cfbd;
 }
@@ -188,7 +196,7 @@ a {
 
 .vid-img-listing {
   /* border: solid 5px black; */
-  border-radius: 25px;
+  /* border-radius: 25px; */
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .video-box {
