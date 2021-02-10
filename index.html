@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>rudyzacharwebsite</title>
+  <title>rudyzacharsite</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <link rel="stylesheet" href="styles.css">
@@ -16,24 +16,25 @@
 </head>
 
 <body>
-  <div class="nav-wrapper">
-    <div id="nav">
-      <li><a class="a-nav" href="#about-me" title="About">About</a></li>
-      <li><a class="a-nav" href="#portfolio" title="Portfolio">Portfolio</a></li>
-      <li><a class="a-nav" href="#contact" title="Contact">Contact</a></li>
-    </div>
-  </div>
-
   <main>
-
-  <div id="logo-div">
-    <h3 id="logo">Hi, my name's Rudy</h3>
-  </div>
+    <div class="nav-wrapper">
+      <div id="nav">
+        <li><a class="a-nav" href="#about-me" title="About">About</a></li>
+        <li><a class="a-nav" href="#portfolio" title="Portfolio">Portfolio</a></li>
+        <li><a class="a-nav" href="#contact" title="Contact">Contact</a></li>
+      </div>
+    </div>
+  <section class="section" id="intr">
+    <div id="logo-div">
+      <h3 class="logo">Hi, my name's Rudy</h3>
+    </div>
+  </section>
 
   <section class="section about-me" id="about-me">
     <div>
       <h2>Something about me</h2>
-      <p>My name's Rudolf Zachar and I have come across different fields of study and work experience. Bookkeeping and economics were part of my earlier education, then the direction turned radically and my university times were inspired by English/American literature and philosophy. Later working in retail/hospitality in mostly multicultural environments and travelling to various countries inspired me to learn basics of French, Italian and Spanish. I have always appreciated the positive impact of modern technologies and admired its complexity and never even thought it was something I could be a part of until... Out of curiosity and interest in where and how all the information/data about anything and everything are managed I researched SQL. Something like 'CREATE TABLE people' was my very first touch with code. Since then I have been exploring the world of digital technologies as a self-starter and later distance learner made me realise that what I like the most about programming is solving problems and continuous learning.</p>
+      <p>My name's Rudolf Zachar and I have come across different fields of study and work experience. Bookkeeping and economics were part of my earlier education, then the direction turned radically and my university times were inspired by English/American literature and philosophy. Later working in retail/hospitality in mostly multicultural environments and travelling to various countries inspired me to learn basics of French, Italian and Spanish.<br /><br />
+        <span>I have always appreciated the positive impact of modern technologies and admired its complexity and never thought it was something I could be a part of until... Out of curiosity and interest in the World of data I researched what SQL was. I was amazed by the data manipulation possibilities. Something like 'CREATE TABLE people' was my very first touch with code. Since then I have been exploring the world of digital technologies as a self-starter and later distance learner and it made me realise that what I like the most about programming is solving problems and continuous learning.</span></p>
     </div>
   </section>
 
@@ -80,15 +81,14 @@
     <div class="col-6 each-col">
       <div class="description">
         <p>
-          An application designed for a small veterinary practice the purpose of which is managing information about incoming 'pet patients', their owners, and a veterinary practice employees. A user can create, edit and delete details about vets,
-          customers, pets and appointments. Owners can arrange appointment for their pet with one of the vets. Go to the app or watch a short demo below.
+          An application designed for a small veterinary practice for managing information about incoming pet patients, their owners, and appointments with the vets. A user can perform basic CRUD actions - create, retrieve, update and delete information. Go to the app or watch a short demo below.
         </p>
         <a href="http://rzvetmanagement.herokuapp.com/home"><button class="button-link">Go to the app</button></a>
         <br/>
         <hr>
         <p>
           <h6><strong>Languages / frameworks used:</strong></h6>
-          MVC architecture pattern utilising <strong>Ruby</strong> and <strong>Sinatra</strong> web framework for request routing and <strong>PostgreSQL</strong> for storing and editing user input data.
+          MVC architecture pattern utilising <strong>Ruby</strong> and <strong>Sinatra</strong> web framework for request routing and <strong>PostgreSQL</strong> for storing user input data.
         </p><br />
       </div>
     </div>
@@ -225,7 +225,7 @@
     <div class="row custom-class">
       <div class="col-6 each-col">
       <div class="description">
-      <p>Dobble application is a browser adaptation of a card game Dobble built as a team project. Special thanks and huge credit going to teammates Helena Kolberg, Stephen Herd and Tomek Nawrocki - enthusiastic collaborators and great teamworkers.</p>
+      <p>Dobble application is a browser adaptation of a card game Dobble built as a team project. When the app is loaded, two cards with six different symbols are shown on screen. On game start the timer is set and a user needs to click the same symbol on the cards. Great fun! Special thanks and huge credit going to teammates Helena Kolberg, Stephen Herd and Tomek Nawrocki - enthusiastic collaborators and great teamworkers.</p>
         <hr>
       <h6><strong>Languages / frameworks used:</strong></h6>
       <p>Front-end: <strong>Vue.js</strong></p>
@@ -249,18 +249,12 @@
       </figure>
   </section>
 
-  <section class="section " id="contact">
+  <section class="section" id="contact">
     <h3>You can find me on...</h3>
     <div id="contact-items">
-      <div class="contact-logos">
         <a href="https://www.linkedin.com/in/rudolf-zachar/"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="contact-logos">
         <a href="https://github.com/rud-y"><i class="fab fa-github-square"></i></a>
-      </div>
-      <div class="contact-logos last">
         <a href="https://twitter.com/rudolf_zachar"><i class="fab fa-twitter-square"></i></a>
-      </div>
     </div>
   </section>
 

@@ -7,8 +7,9 @@ body {
   font-family: "Rhodium Libre", serif;
 }
 main {
-  position: relative;
-  margin-top: 40px;
+  /* position: relative; */
+  /* margin-top: 40px; */
+  background-color: rgb(248, 230, 230);
 }
 
 /* *,
@@ -29,27 +30,6 @@ a {
   line-height: 0.6rem;
 }
 
-#logo-div {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  padding: 0.5rem;
-  background-image: url("images/PANO_scotland.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-#logo {
-  /* position: relative; */
-  max-width: 300px;
-  font-size: 28px;
-}
-/* #logo > a {
-  text-decoration: none;
-  color: black;
-} */
-
 #nav {
   position: fixed;
   right: 0;
@@ -60,7 +40,7 @@ a {
   top: 0;
   z-index: 1;
   width: 100%;
-  height: 40px;
+  height: 34px;
   background-image: linear-gradient(rgb(50, 53, 51), rgb(70, 73, 75));
 }
 #nav > li {
@@ -77,11 +57,25 @@ a {
   color: whitesmoke;
   text-decoration: underline darkgray 3px solid;
 }
+#logo-div {
+  /* position: relative; */
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.logo {
+  /* position: relative; */
+  max-width: 300px;
+  font-size: 35px;
+  transform: rotate(-14deg);
+  text-shadow: 9px 10px 3px rgb(50, 53, 51);
+  color: whitesmoke;
+}
 
 .section {
   width: 100%;
   height: fit-content;
-  padding: 45px 20px;
+  padding: 50px 20px;
 }
 .about-me,
 .portfolio {
@@ -91,19 +85,22 @@ a {
   background-color: #eeebd5;
 }
 #about-me p {
-  /* border: solid 1px rgb(70, 73, 75); */
-  box-shadow: -10px -10px 10px rgb(70, 73, 75);
+  box-shadow: -2px -2px 12px rgb(70, 73, 75);
   padding: 12px;
+  background-color: whitesmoke;
 }
 
 .description {
-  box-shadow: -1px -1px 3px rgb(61, 62, 63);
+  box-shadow: -1px -1px 8px black;
   padding: 12px;
-  /* border-radius: 25px; */
+  background-color: whitesmoke;
 }
 
+#intr {
+  background-color: rgb(4, 18, 22);
+}
 #vet-listing {
-  background-color: #d8cfbd;
+  background-color: #bea980;
 }
 #tournament-listing {
   background-color: whitesmoke;
@@ -213,7 +210,8 @@ a {
 }
 
 .fab {
-  font-size: 45px;
+  font-size: 50px;
+  margin-right: 5px;
 }
 .fa-linkedin {
   color: #2867b2;
@@ -226,21 +224,36 @@ a {
 }
 
 #contact {
-  border-top: solid 2px black;
+  position: relative;
+  border-top: solid 4px whitesmoke;
+  height: 320px;
+  background-image: url("images/PANO_scotland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #contact-items {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 12%;
+  right: 1%;
 }
-.contact-logos {
-  width: 25px;
-  margin: 15px;
+#contact h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bolder;
+  width: 320px;
+  text-align: right;
+  background-color: whitesmoke;
 }
 
-.container {
+/* .contact-logos {
+  /* width: 14px; */
+/* margin: 0 auto;
+  margin-right: 6px;
+} */
+*/ .container {
   padding: 0;
 }
 .row {
@@ -251,11 +264,13 @@ a {
 }
 .card {
   box-shadow: 8px 10px 15px darkgrey;
-  background-color: rgb(235, 229, 243);
-}
-.card-title {
+  background-color: whitesmoke;
 }
 
+footer {
+  padding: 30px;
+  background-color: #f0eaea;
+}
 footer p {
   text-align: center;
 }
