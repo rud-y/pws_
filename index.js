@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "images/PANO_scotland.jpg",
     "images/edinburgh_green.jpg",
     "images/edi1.jpg",
+    "images/pent2.jpg",
+    "images/pent1.jpg",
     // "images/pent1.jpg",
     // "images/pent2.jpg",
     // "images/pepnt3.jpg",
@@ -25,6 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
     let x = Math.floor(Math.random() * pics.length);
     myDiv.style.backgroundImage = "url('" + pics[x] + "')";
     // pics[x].style.objectFit = "contain";
-  }, 5000);
-  // console.log(picRotate);
+  }, 6000);
 });

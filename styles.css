@@ -9,7 +9,7 @@ body {
 main {
   /* position: relative; */
   /* margin-top: 40px; */
-  background-color: rgb(248, 230, 230);
+  background-color: whitesmoke;
 }
 
 /* *,
@@ -41,7 +41,7 @@ a {
   z-index: 1;
   width: 100%;
   height: 34px;
-  background-image: linear-gradient(rgb(50, 53, 51), rgb(70, 73, 75));
+  background-image: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
 }
 #nav > li {
   list-style: none;
@@ -60,16 +60,17 @@ a {
 #logo-div {
   /* position: relative; */
   width: 100%;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 
 .logo {
   /* position: relative; */
   max-width: 300px;
-  font-size: 35px;
-  transform: rotate(-14deg);
+  font-size: 30px;
+  transform: rotate(-12deg);
   text-shadow: 9px 10px 3px rgb(50, 53, 51);
   color: whitesmoke;
+  text-align: center;
 }
 
 .section {
@@ -82,7 +83,7 @@ a {
   height: inherit;
 }
 #about-me {
-  background-color: #eeebd5;
+  background-color: #9cb19f;
 }
 #about-me p {
   box-shadow: -2px -2px 12px rgb(70, 73, 75);
@@ -100,16 +101,16 @@ a {
   background-color: rgb(4, 18, 22);
 }
 #vet-listing {
-  background-color: #bea980;
+  background-color: rgb(236, 236, 236);
 }
 #tournament-listing {
-  background-color: whitesmoke;
+  background-color: rgb(216, 216, 216);
 }
 #dobble-listing {
-  background-color: #f0e098;
+  background-color: rgb(196, 196, 196);
 }
 .portfolio {
-  background-color: #f4f4f2;
+  background-color: whitesmoke;
 }
 .portfolio-container {
   display: flex;
@@ -269,7 +270,9 @@ a {
 
 footer {
   padding: 30px;
-  background-color: #f0eaea;
+  background-image: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
+
+  color: white;
 }
 footer p {
   text-align: center;
