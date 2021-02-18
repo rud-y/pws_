@@ -214,14 +214,25 @@ a {
   font-size: 50px;
   margin-right: 5px;
 }
+
 .fa-linkedin {
-  color: #2867b2;
+  color: #225696;
 }
 .fa-github-square {
   color: black;
 }
 .fa-twitter-square {
   color: #00acee;
+}
+
+.fa-linkedin:hover {
+  color: #0b3870;
+}
+.fa-github-square:hover {
+  color: rgb(53, 53, 54);
+}
+.fa-twitter-square:hover {
+  color: #1094c9;
 }
 
 #contact {
