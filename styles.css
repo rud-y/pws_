@@ -2,6 +2,7 @@ html {
   font-size: 100%;
   box-sizing: border-box;
 }
+
 body {
   font-family: "IM Fell Great Primer", serif;
   font-family: "Rhodium Libre", serif;
@@ -100,18 +101,21 @@ a {
 #intr {
   background-color: rgb(4, 18, 22);
 }
+
 #vet-listing {
   background-color: rgb(236, 236, 236);
 }
 #tournament-listing {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(255, 255, 253);
 }
 #dobble-listing {
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(251, 251, 249);
 }
+
 .portfolio {
   background-color: whitesmoke;
 }
+
 .portfolio-container {
   display: flex;
   flex-flow: row wrap;
@@ -204,7 +208,9 @@ a {
 }
 .figure-caption {
   text-align: center;
+  color: black;
   font-weight: bold;
+  font-size: large;
 }
 .video {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
