@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     let x = Math.floor(Math.random() * pics.length);
     myDiv.style.backgroundImage = "url('" + pics[x] + "')";
     // pics[x].style.objectFit = "contain";
-  }, 5000);
+  }, 7000);
 });
