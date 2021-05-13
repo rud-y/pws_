@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 180) {
+      $(".sticky-name").show(800);
+    } else {
+      $(".sticky-name").hide(800);
+    }
+  });
+
   const myDiv = document.querySelector("#contact");
   let pics = [
     "images/PANO_holyrood.jpg",
