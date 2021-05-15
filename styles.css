@@ -55,6 +55,7 @@ a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 20px;
+  padding: 0 10px;
 }
 .sticky-name:hover {
   color: rgb(114, 132, 151);
@@ -112,10 +113,10 @@ a {
 #about-me p {
   padding: 20px;
   background-color: #e6eaee;
-
   width: 90%;
   margin: auto;
   color: black;
+  text-align: justify;
   /* box-shadow: 0 20px 50px rgb(35, 35, 36); */
 }
 
@@ -207,6 +208,9 @@ a {
   padding: 20px;
   background-color: whitesmoke;
 }
+.description p {
+  text-align: justify;
+}
 .button-link {
   color: black;
   text-decoration: none;
@@ -248,39 +252,43 @@ a {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.fab {
+/*CONTACT LINKS*/
+.fab,
+.fas {
   font-size: 50px;
   margin-right: 5px;
 }
-
+.fa-envelope {
+  color: black;
+  transform: rotate(-35deg);
+}
 .fa-linkedin {
   color: #225696;
 }
 .fa-github-square {
-  color: rgb(56, 55, 55);
+  color: black;
 }
 .fa-twitter-square {
   color: #00acee;
 }
 
-.fa-linkedin:hover {
-  color: #063875;
+.fa-linkedin:hover,
+.fa-github-square:hover,
+.fa-twitter-square:hover,
+.fa-envelope:hover {
+  color: grey;
 }
-.fa-github-square:hover {
-  color: black;
-}
-.fa-twitter-square:hover {
-  color: #1d98c9;
+.fa-envelope:hover {
+  transform: rotate(0deg);
+  transition: 0.8s ease-in-out;
 }
 
 #contact {
   position: relative;
   border-top: solid 4px whitesmoke;
   height: 350px;
-  background-image: url("images/PANO_scotland.jpg");
-  background-repeat: no-repeat;
+  background-image: url("images/PANO_scotland.jpg") no-repeat center;
   background-size: cover;
-  background-position: center center;
 }
 
 #contact-items {
