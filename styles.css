@@ -141,7 +141,7 @@ a {
 .portfolio-box:hover {
   box-shadow: 5px 5px 10px #696965;
   background-color: whitesmoke;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
 }
 .portfolio-images {
   display: block;
@@ -287,8 +287,10 @@ a {
   position: relative;
   border-top: solid 4px whitesmoke;
   height: 350px;
-  background-image: url("images/PANO_scotland.jpg") no-repeat center;
+  background-image: url("images/stabbs.jpg") no-repeat;
+  background-position: center top;
   background-size: cover;
+  /* background-clip: border-box; */
 }
 
 #contact-items {
@@ -306,12 +308,7 @@ a {
   background-color: whitesmoke;
 }
 
-/* .contact-logos {
-  /* width: 14px; */
-/* margin: 0 auto;
-  margin-right: 6px;
-} */
-*/ .container {
+.container {
   padding: 0;
 }
 .row {
@@ -320,10 +317,6 @@ a {
 .each-col {
   margin-bottom: 15px;
 }
-/* .card {
-  box-shadow: 8px 10px 15px darkgrey;
-  background-color: whitesmoke;
-} */
 
 footer {
   padding: 30px;
@@ -333,9 +326,6 @@ footer {
 }
 footer p {
   text-align: center;
-}
-
-@media (max-width: 576px) {
 }
 
 @media (max-width: 992px) {

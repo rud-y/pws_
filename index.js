@@ -7,7 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const myDiv = document.querySelector("#contact");
+  const imagesAndVideos = document.querySelectorAll("img, video");
+  imagesAndVideos.forEach((item) => {
+    item.setAttribute("loading", "lazy");
+  });
+
+  const copyrights = document.getElementById("copyrights");
+  let currentYear = new Date().getFullYear();
+  copyrights.innerHTML = currentYear;
+
+  const pictureDiv = document.querySelector("#contact");
   let pics = [
     "images/PANO_holyrood.jpg",
     "images/PANO_scotland.jpg",
@@ -15,11 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "images/pent2.jpg",
     "images/pent1.jpg",
     "images/pent3.jpg",
+    "images/citysunset.jpg",
+    "images/stabbs.jpg",
   ];
 
   setInterval(() => {
     let x = Math.floor(Math.random() * pics.length);
-    myDiv.style.backgroundImage = "url('" + pics[x] + "')";
-    // pics[x].style.objectFit = "contain";
+    pictureDiv.style.backgroundImage = "url('" + pics[x] + "')";
   }, 7000);
 });
