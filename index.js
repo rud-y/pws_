@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "images/stabbs.jpg",
   ];
 
-  setInterval(() => {
-    let x = Math.floor(Math.random() * pics.length);
-    pictureDiv.style.backgroundImage = "url('" + pics[x] + "')";
-  }, 7000);
+    setInterval(() => {
+      let x = Math.floor(Math.random() * pics.length);
+      pictureDiv.style.backgroundImage = "url('" + pics[x] + "')";
+    }, 7000);
 });
