@@ -2,7 +2,9 @@
   --my-nav-bar: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
   --the-shadow: 4px 4px 20px 1px rgb(112, 115, 117);
   --dark-background: rgb(40, 40, 40);
-  --light-background: rgb(240, 240, 240);
+  --light-background: rgb(230, 230, 230);
+  --yellow-line: rgb(220, 200, 10);
+  --shady-background: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
 }
 
 .hidden {
@@ -17,9 +19,6 @@ html {
 body {
   font-family: "IM Fell Great Primer", serif;
   font-family: "Rhodium Libre", serif;
-}
-main {
-  background-color: whitesmoke;
 }
 
 h2,
@@ -44,14 +43,14 @@ a {
 }
 
 .sticky-name {
-  color: whitesmoke;
+  color: var(--light-background);
   font-size: 20px;
   padding: 0 10px;
   text-decoration: none;
   vertical-align: text-bottom;
 }
 .sticky-name:hover {
-  color: rgb(114, 132, 151);
+  color: var(--yellow-line);
   letter-spacing: 1px;
 }
 
@@ -72,7 +71,7 @@ a {
 }
 .a-nav:hover {
   color: whitesmoke;
-  text-decoration: underline darkgray 3px solid;
+  text-decoration: underline var(--yellow-line) 3px solid;
 }
 #logo-div {
   /* position: relative; */
@@ -102,7 +101,7 @@ a {
 }
 
 #about-me {
-  background-image: linear-gradient(rgb(70, 70, 70), black);
+  background-image: var(--shady-background);
 
   p {
     padding: 20px;
@@ -131,16 +130,15 @@ a {
   font-weight: bold;
 }
 
-
 .portfolio-box {
   width: 350px;
   padding: 15px;
   margin: 25px;
-  background-color: #dcdee0;
-  box-shadow: 20px 15px 15px #aaaaaa;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 20px 15px 15px gray;
 }
 .portfolio-box:hover {
-  box-shadow: 5px 5px 10px #696965;
+  box-shadow: 5px 5px 10px gray;
   background-color: whitesmoke;
   transition: all 0.2s ease-out;
 }
@@ -180,7 +178,6 @@ a {
   float: right;
 }
 .show:hover {
-  color: rgb(14, 101, 168);
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -195,10 +192,7 @@ a {
 #tournament-listing {
   background-color: var(--light-background);
 }
-/* #dobble-listing {
-  background-color: var(--dark-background);
-  color: var(--light-background);
-} */
+
 #rps-listing {
   background-color: var(--light-background);
 }
@@ -209,8 +203,8 @@ a {
 }
 
 .button-link {
-  border: solid 1px var(--light-background);
-  color: var(--light-background);
+  border: solid 1px var(--yellow-line);
+  color: var(--yellow-line);
   display: block;
   margin: 0 auto;
   padding: 8px;
@@ -218,8 +212,8 @@ a {
   width: fit-content;
 }
 .button-link:hover {
-  background-color: black;
-  color: whitesmoke;
+  background-color: var(--yellow-line);
+  color: black;
   font-weight: bolder;
   transition: all 0.5s ease-in-out;
 }
@@ -267,7 +261,7 @@ a {
 .fa-github-square:hover,
 .fa-twitter-square:hover,
 .fa-envelope:hover {
-  color: grey;
+  color: var(--yellow-line);
 }
 .fa-envelope:hover {
   transform: rotate(0deg);
@@ -275,13 +269,13 @@ a {
 }
 
 #contact {
-  position: relative;
-  border-top: solid 4px whitesmoke;
-  height: 350px;
+  background-image: var(--shady-background);
   background-image: url("images/stabbs.jpg") no-repeat;
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 350px;
+  position: relative;
   width: 100%;
 }
 
@@ -297,7 +291,6 @@ a {
   font-weight: bolder;
   width: 200px;
   text-align: center;
-  background-color: lightgrey;
 }
 
 .container {
@@ -312,9 +305,10 @@ a {
 
 footer {
   padding: 30px;
-  background-image: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
+  background-image: var(--shady-background);
   color: white;
 }
+
 footer p {
   text-align: center;
 }
