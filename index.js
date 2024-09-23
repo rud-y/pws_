@@ -18,14 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const pictureDiv = document.querySelector("#contact");
   let pics = [
+    "images/hills2.jpg",
     "images/PANO_holyrood.jpg",
     "images/PANO_scotland.jpg",
-    "images/edinburgh_green.jpg",
     "images/pent2.jpg",
-    "images/pent1.jpg",
     "images/pent3.jpg",
-    "images/citysunset.jpg",
     "images/stabbs.jpg",
+    "images/hills.jpg",
   ];
 
     setInterval(() => {
