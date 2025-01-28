@@ -31,8 +31,8 @@ h4 {
 p {
  margin: 0;
 }
-a {
- /* line-height: 0.6rem; */
+#portfolio a {
+ line-height: 0.6rem;
 }
 
 .nav-wrapper {
@@ -173,7 +173,7 @@ a {
  background-color: var(--basic-darkblue);
 
  p, figcaption, h1, h2, h6, hr {
-   color: var(--basic-yellow);
+  color: var(--basic-yellow);
  }
 }
 #tournament-listing, #rps-listing {
@@ -182,8 +182,7 @@ a {
 }
 
 .description {
-  padding: 20px;
-  text-align: justify;
+ padding: 20px;
 }
 
 #tournament-listing .description,
@@ -191,20 +190,30 @@ a {
  padding-top: 0;
 }
 
-.button-link {
-  border: solid 1px var(--basic-yellow);
-  color: var(--basic-yellow);
-  display: block;
-  margin: 0 auto;
-  padding: 8px;
-  text-decoration: none;
-  width: fit-content;
+.app-link {
+ padding: 2px;
+ display: block;
+ width: fit-content;
 }
-.button-link:hover {
-  background-color: var(--basic-yellow);
-  color: black;
-  font-weight: bolder;
-  transition: all 0.5s ease-in-out;
+
+.app-link-eat {
+ color: var(--basic-yellow);
+}
+.app-link-rps {
+ color: var(--basic-blue);
+}
+
+.app-link-rps:hover {
+ background-color: var(--basic-darkblue);
+ color: var(--basic-yellow);
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+}
+.app-link-eat:hover {
+ background-color: var(--basic-yellow);
+ color: var(--basic-darkblue);
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
 }
 
 .video-box {
