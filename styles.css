@@ -84,7 +84,7 @@ p {
 
 .about-me,
 .portfolio {
- height: inherit;
+ /* height: inherit; */
 }
 
 #about-me {
@@ -118,6 +118,7 @@ p {
 }
 
 .portfolio-box {
+ flex: 0 0 auto;
  background-color: var(--light-background);
  border-radius: 6px;
  box-shadow: 20px 15px 15px gray;
