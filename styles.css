@@ -1,10 +1,11 @@
 :root {
-  --my-nav-bar: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
-  --the-shadow: 4px 4px 20px 1px rgb(112, 115, 117);
-  --dark-background: rgb(40, 40, 40);
-  --light-background: rgb(230, 230, 230);
-  --yellow-line: rgb(220, 200, 10);
-  --shady-background: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
+ --my-nav-bar: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
+ --basic-yellow: #f2c75c;
+ --basic-darkblue: #1b365d;
+ --basic-dark: #44494e;
+ --the-shadow: 4px 4px 20px 1px rgb(112, 115, 117);
+ --light-background: #e4e3e3;
+ --shady-background: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
 }
 
 .hidden {
@@ -21,16 +22,17 @@ body {
   font-family: "Rhodium Libre", serif;
 }
 
+h1,
 h2,
 h3,
 h4 {
-  text-align: center;
+ text-align: center;
 }
 p {
-  margin: 0;
+ margin: 0;
 }
 a {
-  line-height: 0.6rem;
+ /* line-height: 0.6rem; */
 }
 
 .nav-wrapper {
@@ -50,7 +52,7 @@ a {
   vertical-align: text-bottom;
 }
 .sticky-name:hover {
-  color: var(--yellow-line);
+  color: var(--basic-yellow);
   letter-spacing: 1px;
 }
 
@@ -66,86 +68,71 @@ a {
   margin-right: 12px;
 }
 .a-nav {
-  color: whitesmoke;
+  color: var(--basic-yellow);
   text-decoration: none;
 }
 .a-nav:hover {
   color: whitesmoke;
-  text-decoration: underline var(--yellow-line) 3px solid;
-}
-#logo-div {
-  /* position: relative; */
-  width: 100%;
-  margin-top: 20px;
-}
-
-.logo {
-  /* position: relative; */
-  max-width: 300px;
-  font-size: 30px;
-  transform: rotate(-12deg);
-  text-shadow: 9px 10px 3px rgb(70, 73, 75);
-  color: whitesmoke;
-  text-align: center;
+  text-decoration: underline var(--basic-yellow) 3px solid;
 }
 
 .section {
-  width: 100%;
-  height: fit-content;
-  padding: 50px 20px;
+ width: 100%;
+ height: fit-content;
+ padding: 50px 20px;
 }
 
 .about-me,
 .portfolio {
-  height: inherit;
+ height: inherit;
 }
 
 #about-me {
   background-image: var(--shady-background);
 
-  p {
-    padding: 20px;
-    width: 90%;
-    margin: auto;
-    text-align: justify;
-  }
+ p {
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+ }
 
-  p, h2, h1 {
-    color: whitesmoke;
-  }
+ p, h2, h1 {
+  color: whitesmoke;
+ }
 }
 
 .portfolio-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+ align-items: center;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
 }
 
 #portfolio {
-  background-color: var(--light-background);
+ background-color: var(--basic-yellow);
 }
 
 #portfolio h2 {
-  font-weight: bold;
+ font-weight: bold;
 }
 
 .portfolio-box {
-  width: 350px;
-  padding: 15px;
-  margin: 25px;
-  background-color: rgb(245, 245, 245);
-  box-shadow: 20px 15px 15px gray;
+ background-color: var(--light-background);
+ border-radius: 6px;
+ box-shadow: 20px 15px 15px gray;
+ margin: 25px;
+ padding: 15px;
+ width: 350px;
 }
 .portfolio-box:hover {
-  box-shadow: 5px 5px 10px gray;
-  background-color: whitesmoke;
-  transition: all 0.2s ease-out;
+ box-shadow: 5px 5px 10px gray;
+ transition: all 0.2s ease-out;
 }
 .portfolio-images {
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
+ border-radius: 5px;
+ display: block;
+ margin: 0 auto;
 }
 
 .v-box {
@@ -178,23 +165,20 @@ a {
   float: right;
 }
 .show:hover {
-  font-weight: bolder;
-  text-decoration: underline;
+ color: var(--basic-darkblue);
+ text-decoration: underline;
 }
 
-#vet-listing, #dobble-listing {
-  background-color: var(--dark-background);
+#vet-listing, #dobble-listing, #eat-listing {
+ background-color: var(--basic-darkblue);
 
-  p, figcaption, h2, h6, hr {
-    color: var(--light-background);
-  }
+ p, figcaption, h1, h2, h6, hr {
+   color: var(--basic-yellow);
+ }
 }
-#tournament-listing {
-  background-color: var(--light-background);
-}
-
-#rps-listing {
-  background-color: var(--light-background);
+#tournament-listing, #rps-listing {
+ color: var(--basic-darkblue);
+ background-color: var(--basic-yellow);
 }
 
 .description {
@@ -202,9 +186,14 @@ a {
   text-align: justify;
 }
 
+#tournament-listing .description,
+#eat-listing .description {
+ padding-top: 0;
+}
+
 .button-link {
-  border: solid 1px var(--yellow-line);
-  color: var(--yellow-line);
+  border: solid 1px var(--basic-yellow);
+  color: var(--basic-yellow);
   display: block;
   margin: 0 auto;
   padding: 8px;
@@ -212,14 +201,10 @@ a {
   width: fit-content;
 }
 .button-link:hover {
-  background-color: var(--yellow-line);
+  background-color: var(--basic-yellow);
   color: black;
   font-weight: bolder;
   transition: all 0.5s ease-in-out;
-}
-
-#listing-heading {
-  text-shadow: gray 4px 6px 8px;
 }
 
 .video-box {
@@ -261,7 +246,7 @@ a {
 .fa-github-square:hover,
 .fa-twitter-square:hover,
 .fa-envelope:hover {
-  color: var(--yellow-line);
+  color: var(--basic-yellow);
 }
 .fa-envelope:hover {
   transform: rotate(0deg);
@@ -269,28 +254,30 @@ a {
 }
 
 #contact {
-  background-image: var(--shady-background);
-  background-image: url("images/stabbs.jpg") no-repeat;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 350px;
-  position: relative;
-  width: 100%;
+ background-image: var(--shady-background);
+ background-image: url("images/stabbs.jpg") no-repeat;
+ background-position: center top;
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 350px;
+ position: relative;
+ width: 100%;
 }
 
 #contact-items {
-  position: absolute;
-  top: 12%;
-  right: 1%;
+ position: absolute;
+ top: 12%;
+ right: 1%;
 }
 #contact h3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-weight: bolder;
-  width: 200px;
-  text-align: center;
+ background-color: var(--basic-darkblue);
+ border-top: 1px solid var(--basic-yellow);
+ color: var(--basic-yellow);
+ position: absolute;
+ right: 0;
+ text-align: center;
+ top: 0;
+ width: 200px;
 }
 
 .container {
