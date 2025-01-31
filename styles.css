@@ -14,12 +14,12 @@
 
 html {
   box-sizing: border-box;
-  font-size: 100%;
-}
-
+  font-size: 19px;
+ }
+ 
 body {
-  font-family: "IM Fell Great Primer", serif;
-  font-family: "Rhodium Libre", serif;
+ font-family: "IM Fell Great Primer", serif;
+ font-family: "Rhodium Libre", serif;
 }
 
 h1,
@@ -149,6 +149,9 @@ p, h2, h1 {
 }
 .rps-box {
   transform: rotate(-3deg);
+}
+.eat-box {
+ transform: rotate(3deg);
 }
 
 .caption {
