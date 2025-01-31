@@ -35,9 +35,13 @@ p {
  line-height: 0.6rem;
 }
 
+:focus {
+ outline: 4px solid #61c900;
+} 
+
 .nav-wrapper {
   background-image: var(--my-nav-bar);
-  height: 34px;
+  height: 40px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -46,11 +50,14 @@ p {
 
 .sticky-name {
   color: var(--light-background);
-  font-size: 20px;
+  font-size: 19px;
   padding: 0 10px;
+  position: fixed;
+  left: 0;
+  top: 10px;
   text-decoration: none;
-  vertical-align: text-bottom;
 }
+
 .sticky-name:hover {
   color: var(--basic-yellow);
   letter-spacing: 1px;
@@ -59,21 +66,21 @@ p {
 #nav {
   position: fixed;
   right: 0;
-  top: 8px;
+  top: 10px;
 }
-#nav > li {
-  list-style: none;
-  display: inline;
-  font-size: 15px;
-  margin-right: 12px;
+#nav > a {
+ list-style: none;
+ display: inline;
+ font-size: 19px;
+ margin-right: 12px;
 }
 .a-nav {
-  color: var(--basic-yellow);
-  text-decoration: none;
+ color: var(--basic-yellow);
+ text-decoration: none;
 }
 .a-nav:hover {
-  color: whitesmoke;
-  text-decoration: underline var(--basic-yellow) 3px solid;
+ color: whitesmoke;
+ text-decoration: underline var(--basic-yellow) 3px solid;
 }
 
 .section {
@@ -82,24 +89,19 @@ p {
  padding: 50px 20px;
 }
 
-.about-me,
-.portfolio {
- /* height: inherit; */
-}
-
 #about-me {
-  background-image: var(--shady-background);
+ background-image: var(--shady-background);
 
  p {
   padding: 20px;
   width: 90%;
   margin: auto;
   text-align: justify;
- }
+}
 
- p, h2, h1 {
-  color: whitesmoke;
- }
+p, h2, h1 {
+ color: whitesmoke;
+}
 }
 
 .portfolio-container {

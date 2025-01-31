@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Rudolf Zachar Junior Software developer portfolio website, projects - Ruby, Java, React" >
-  <title>Rudolf Zachar</title>
+  <title>Rudolf Zachar portfolio website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <link rel="stylesheet" href="styles.css">
@@ -19,12 +19,12 @@
 
 <body>
   <main>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper" aria-label="Rudolf Zachar portfolio website" tabindex="0">
       <a class="sticky-name hidden" href="/">RUDY</a>
-      <div id="nav">
-        <li><a class="a-nav" href="#about-me" title="About">About</a></li>
-        <li><a class="a-nav" href="#portfolio" title="Portfolio">Portfolio</a></li>
-        <li><a class="a-nav" href="#contact" title="Contact">Contact</a></li>
+      <div id="nav" aria-label="Entering main navigation" tabindex="0">
+        <a aria-label="About" class="a-nav" href="#about-me" title="About">About</a>
+        <a aria-label="Portfolio" class="a-nav" href="#portfolio" title="Portfolio">Portfolio</a>
+        <a aria-label="Contact" class="a-nav" href="#contact" title="Contact">Contact</a>
       </div>
     </div>
 
@@ -37,9 +37,9 @@
 
   <section class="section portfolio" id="portfolio">
    <h2>Portfolio</h2>
-   <div class="portfolio-container">
+   <div class="portfolio-container" aria-label="Portfolio section" tabindex="0">
 
-    <div class="portfolio-box eat-box">
+    <div class="portfolio-box eat-box" aria-label="Eat and Split project" tabindex="0">
       <h5 class="caption">Eat and Split</h5>
       <hr />
       <p>
@@ -49,7 +49,7 @@
       <img class="portfolio-images" src="images/eatnsplit.png" width="90" height="200" alt="Image of Eat and split application screenshot" />
     </div>
 
-    <div class="portfolio-box rps-box">
+    <div class="portfolio-box rps-box" aria-label="Rock, paper, scissors project" tabindex="0">
       <h5 class="caption">Rock Paper Scissors</h5>
       <hr />
       <p>
@@ -59,17 +59,17 @@
       <img class="portfolio-images" src="images/rockpaperscissors.png" width="295" height="200" alt="Rock paper scissors image" />
     </div>
 
-    <div class="portfolio-box v-box">
+    <div class="portfolio-box v-box" aria-label="Vet management project" tabindex="0">
       <h5 class="caption">Vet Management app</h5>
       <hr />
       <p>
         <a class="show show-github" href="https://github.com/rud-y/Veterinary_practice_project">GitHub</a>
         <a class="show show-more" href="#vet-listing">Show more</a>
       </p><br />
-      <img class="portfolio-images" src="images/paw.svg" width="200" height="200" alt="Image of a dog's paw" />
+      <img class="portfolio-images" src="images/pa.svg" width="200" height="200" alt="Image of a dog's paw" />
     </div>
 
-    <div class="portfolio-box t-box">
+    <div class="portfolio-box t-box" aria-label="Tournament manager project" tabindex="0">
       <h5 class="caption">Tournament manager</h5>
       <hr />
       <a class="show show-more" href="#tournament-listing">Show more</a>
@@ -79,7 +79,7 @@
         alt="An image of a league table">
     </div>
 
-    <div class="portfolio-box d-box">
+    <div class="portfolio-box d-box" aria-label="Dobble game project" tabindex="0">
       <h5 class="caption">Dobble browser game</h5>
       <hr />
       <p>
@@ -92,7 +92,7 @@
   </section>
 
   <!--Listings-->
-  <section class="section listings" id="eat-listing">
+  <section class="section listings" id="eat-listing" aria-label="Eat and split tracker project description" tabindex="0">
    <h2 id="listing-heading"><strong>Eat & Split Tracker</strong></h2><br />
    <div class="container">
     <div class="row custom-class">
@@ -118,7 +118,7 @@
    </div>
   </section>
 
-  <section class="section listings" id="rps-listing">
+  <section class="section listings" id="rps-listing" aria-label="Rock Paper Scissors description" tabindex="0">
     <h2 id="listing-heading"><strong>Rock - Paper - Scissors</strong></h2><br />
     <div class="container">
     <div class="row custom-class">
@@ -146,7 +146,7 @@
       </div>
   </section>
 
-  <section class="section listings" id="vet-listing">
+  <section class="section listings" id="vet-listing" aria-label="Vet management project description" tabindex="0">
    <h2 id="listing-heading"><strong>Vet management app</strong></h2><br />
    <div class="container">
     <div class="row custom-class">
@@ -174,7 +174,7 @@
    </div>
   </section>
 
-  <section class="section listings" id="tournament-listing">
+  <section class="section listings" id="tournament-listing" aria-label="Tournament manager description" tabindex="0">
     <h2 id="listing-heading"><strong>Tournament manager</strong></h2><br />
     <div class="container">
     <div class="row custom-class">
@@ -205,7 +205,7 @@
     </div>
   </section>
 
-  <section class="section listings" id="dobble-listing">
+  <section class="section listings" id="dobble-listing" aria-label="Dobble web app game project description" tabindex="0">
     <h2 id="listing-heading"><strong>Dobble</strong></h2><br />
     <div class="container">
     <div class="row custom-class">
@@ -232,11 +232,11 @@
 
   <section class="section" id="contact">
     <h3>Get in touch</h3>
-    <div id="contact-items">
-      <a href="mailto:rudolf.zachar@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/rudolf-zachar/" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-      <a target="_blank" href="https://github.com/rud-y" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
-      <a target="_blank" href="https://twitter.com/rudolf_zachar" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
+    <div id="contact-items" aria-label="Contact me section" tabindex="0">
+      <a href="mailto:rudolf.zachar@gmail.com"><i class="fas fa-envelope" aria-label="email"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/rudolf-zachar/" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></a>
+      <a target="_blank" href="https://github.com/rud-y" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github-square"></i></a>
+      <a target="_blank" href="https://twitter.com/rudolf_zachar" rel="noopener noreferrer"><i class="fab fa-twitter-square" aria-label="Twitter"></i></a>
     </div>
   </section>
   <footer>
