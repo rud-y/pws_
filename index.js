@@ -7,6 +7,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  
+ let catchingUp;
+ const progressBar = document.querySelector(".progress-bar");
+
+ function updateProgressBarColor() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+
+  const scrollablePart = docHeight - windowHeight;
+
+  const scrollPercentage = Math.round((scrollTop / scrollablePart) * 100);
+
+  progressBar.style.width = `${scrollPercentage}%`;
+  catchingUp = false;
+ }
+  
+ window.addEventListener("scroll", () => {
+  if(!catchingUp) {
+   requestAnimationFrame(updateProgressBarColor);
+   catchingUp = true;
+  }
+ });
+
   const imagesAndVideos = document.querySelectorAll("img, video");
   imagesAndVideos.forEach((item) => {
     item.setAttribute("loading", "lazy");
