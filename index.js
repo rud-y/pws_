@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
       $(".sticky-name").hide(800);
     }
   });
-
   
  let catchingUp;
  const progressBar = document.querySelector(".progress-bar");
@@ -31,28 +30,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
  });
 
-  const imagesAndVideos = document.querySelectorAll("img, video");
-  imagesAndVideos.forEach((item) => {
-    item.setAttribute("loading", "lazy");
-  });
-
   const copyrights = document.getElementById("copyrights");
   let currentYear = new Date().getFullYear();
   copyrights.innerHTML = currentYear;
 
   const pictureDiv = document.querySelector("#contact");
-  let pics = [
-    "images/hills2.jpg",
-    "images/PANO_holyrood.jpg",
-    "images/PANO_scotland.jpg",
-    "images/pent2.jpg",
-    "images/pent3.jpg",
-    "images/stabbs.jpg",
-    "images/hills.jpg",
+
+  const imgs = [
+    "i1.webp",
+    "i2.webp",
+    "i3.webp",
+    "i4.webp",
+    "i5.webp",
+    "i6.webp",
+    "i7.webp",
   ];
+  imgs.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
 
     setInterval(() => {
-      let x = Math.floor(Math.random() * pics.length);
-      pictureDiv.style.backgroundImage = "url('" + pics[x] + "')";
-    }, 7000);
+      let x = Math.floor(Math.random() * imgs.length);
+      pictureDiv.style.backgroundImage = `url('images/${imgs[x]}')`;
+    }, 3000);
 });

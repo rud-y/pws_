@@ -284,12 +284,13 @@ p, h2, h1 {
 
 #contact {
  background-image: var(--shady-background);
- background-image: url("images/stabbs.jpg") no-repeat;
+ background-image: url("images/i3.webp");
  background-position: center top;
  background-size: cover;
  background-repeat: no-repeat;
  height: 350px;
  position: relative;
+ transition: background-image 0.7s ease-in-out;
  width: 100%;
 }
 
