@@ -33,7 +33,7 @@
   <section class="section about-me" id="about-me">
     <h1>Rudy Zachar</h1>
     <div>
-      <p>Hi, I’m Rudy, a software developer with a passion for problem-solving and learning languages [ both programming and spoken ]. With experience in web development and a drive to continuously expand my skill set, I’m always eager to take on new challenges and grow along the way. Welcome to my portfolio – feel free to explore my projects and get in touch!</p>
+      <p>Hi, I’m Rudy, a software developer with a passion for problem-solving and learning languages [ both programming and spoken ] With experience in web development and a drive to continuously expand my skill set, I’m always eager to take on new challenges and grow along the way. Welcome to my portfolio – feel free to explore my projects and get in touch!</p>
     </div>
   </section>
 
@@ -42,13 +42,13 @@
    <div class="portfolio-container" aria-label="Portfolio section" tabindex="0">
 
     <div class="portfolio-box eat-box" aria-label="Eat and Split project" tabindex="0">
-      <h5 class="caption">Eat and Split</h5>
+      <h5 class="caption">SplitItApp</h5>
       <hr />
       <p>
         <a class="show show-github" href="https://github.com/rud-y/eatAndSplit">Go to GitHub</a>
         <a class="show show-more" href="#eat-listing">Show more</a>
       </p><br />
-      <img class="portfolio-images" src="images/eatnsplit.png" width="90" height="200" alt="Image of Eat and split application screenshot" />
+      <img class="portfolio-images" src="images/splititapp.jpg" width="90" height="200" alt="Image of Eat and split application screenshot" />
     </div>
 
     <div class="portfolio-box rps-box" aria-label="Rock, paper, scissors project" tabindex="0">
@@ -95,7 +95,7 @@
 
   <!--Listings-->
   <section class="section listings" id="eat-listing" aria-label="Eat and split tracker project description" tabindex="0">
-   <h2 id="listing-heading"><strong>Eat & Split Tracker</strong></h2><br />
+   <h2 id="listing-heading"><strong>SplitItApp</strong></h2><br />
    <div class="container">
     <div class="row custom-class">
      <div class="col-6 each-col">
@@ -104,15 +104,15 @@
           A web app tracking bill expenses when going out with friends. Functionality includes an option to add a new friends to the existing list, splitting a bill amount between two people, adjusting a friend's balance state accordingly. Tracking of the overall balance. <a target="_blank" class="app-link app-link-eat" href="https://eat-n-splittracker.netlify.app/" rel="noopener noreferrer">OPEN APP</a>
          </p>
          <hr>
-           <h6><strong>Languages used:</strong></h6>
+           <h6><strong>Tech Stack:</strong></h6>
            <p>
-            React.js
+            React.js; controlled components
            </p><br />
        </div>
      </div>
      <div class="col-6 each-col">
        <div class="card">
-          <img src="images/eatnsplit-listing.png" alt="Eat and split app image">
+          <img src="images/splititapp.jpg" alt="Eat and split app image">
        </img>
        </div>
      </div>
@@ -127,12 +127,12 @@
     <div class="col-6 each-col">
       <div class="description">
         <p>
-         Very well-known simple game turned into a web browser game using <b>Vanilla JavaScript</b> and <b>CSS</b>. A user plays against 'computer' with a visual feedback for each round. If the score 5 is reached by either player, that's the end of a round. Overall sets score is tracked. <a target="_blank" class="app-link app-link-rps" href="https://rockpapersciss.netlify.app/" rel="noopener noreferrer">OPEN APP</a> 
+         A responsive web game featuring a human-vs-computer interface. This project is built on clean Vanilla JS logic for score tracking, win/loss conditions, and interactive CSS.<a target="_blank" class="app-link app-link-rps" href="https://rockpapersciss.netlify.app/" rel="noopener noreferrer">OPEN APP</a> 
         </p>
         <hr>
-          <h6><strong>Languages used:</strong></h6>
+          <h6><strong>Tech Stack:</strong></h6>
           <p>
-            Front-end only: Vanilla JavaScript.
+           Vanilla JavaScript
           </p>
       </div>
     </div>
@@ -155,13 +155,16 @@
       <div class="col-6 each-col">
      <div class="description">
       <p>
-        An application designed for a small veterinary practice for managing information about incoming pet patients, their owners, and appointments with the vets. Built as my first project during CodeClan bootcamp. Go to the app or watch a short demo below.
+        A full-stack CRUD application designed to streamline operations for a small veterinary clinic. This project focuses on managing the complex relationships between pet patients, their owners, and available veterinarians.
       </p><br/>
       <hr>
-        <h6><strong>Languages / frameworks used:</strong></h6>
+        <h6><strong>Tech Stack</strong></h6>
       <p>
-        MVC architecture pattern utilizing <strong>Ruby</strong> and <strong>Sinatra</strong> web framework for request routing and <strong>PostgreSQL</strong> for storing user input data.
-      </p><br />
+        This application is built using the MVC (Model-View-Controller) design pattern to ensure a clean separation of concerns and scalable code.
+      </p>
+      <p><strong>Backend:</strong> Leveraged Ruby and the Sinatra web framework to manage server-side logic and complex request routing.</p>
+      <p><strong>Persistence:</strong> Integrated PostgreSQL to handle relational data storage and maintain the integrity of user-generated content.</p>
+      <br />
      </div>
       </div>
       <div class="col-6 each-col">
@@ -183,14 +186,13 @@
       <div class="col-6 each-col">
         <div class="description">
           <p>
-            Tournament manager application is designed mainly for sports enthusiasts who want to keep statistics of their own league. It was built as a pair project during my CodeClan course. A huge credit to Robert Peacock - classmate without whom the project would not exist as it is today.
+            This application allows users to digitize their tournaments, providing a central hub for teams, fixtures, and live standings.
           </p>
           <p>
-            A user can manage different tournaments by
-            adding new tournaments, teams and creating new matches: first fixtures, then results. After match score is submitted the correspondent league table is updated with wins, draws or losses and the teams in a table sorted according to points earned.
+            Once a user enters a match result, the application handles the heavy lifting - immediately updating the league table and adjusting team rankings based on performance.
           </p>
           <hr>
-          <h6><strong>Languages / frameworks used:</strong></h6>
+          <h6><strong>Tech Stack</strong></h6>
           <p>
             Back-end: <strong>Spring</strong> framework with Hibernate - Object Relational Mapping.
           </p>
@@ -213,8 +215,9 @@
     <div class="row custom-class">
       <div class="col-6 each-col">
       <div class="description">
-      <p>Dobble application is a browser adaptation of a card game Dobble built as a team project. When the app is loaded, two cards with six different symbols are shown on screen. On game start the timer is set and a user needs to click the same symbol on the cards to earn a point. Special thanks and huge credit going to great teamworkers Helena Kolberg, Stephen Herd and Tomek Nawrocki.</p><hr>
-      <h6><strong>Languages / frameworks used:</strong></h6>
+      <p>A fast-paced, browser-based adaptation of the classic card game, developed as a collaborative team effort. The application challenges users to identify matching symbols between two cards under a timed countdown.</p>
+       <p><strong>Key features:</strong> Real-time symbol synchronization, dynamic score tracking, and an integrated game timer.</p><hr>
+      <h6><strong>Tech Stack</strong></h6>
       <p>Front-end: <strong>Vue.js</strong></p>
       <p>Back-end: <strong>Express server</strong>, <strong>MongoDB</strong>
       </p>
@@ -233,12 +236,16 @@
   </section>
 
   <section class="section" id="contact">
-    <h3>Get in touch</h3>
+   <div id="bg-1" class="bg-layer"></div>
+   <div id="bg-2" class="bg-layer" style="opacity: 0;"></div>
+   <div class="contact-content">
+    <div class="contact-title"><h3>Get in touch</h3></div>
     <div id="contact-items" aria-label="Contact me section" tabindex="0">
       <a href="mailto:rudolf.zachar@gmail.com"><i class="fas fa-envelope" aria-label="email"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/rudolf-zachar/" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></a>
       <a target="_blank" href="https://github.com/rud-y" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github-square"></i></a>
       <a target="_blank" href="https://twitter.com/rudolf_zachar" rel="noopener noreferrer"><i class="fab fa-twitter-square" aria-label="Twitter"></i></a>
+     </div>
     </div>
   </section>
   <footer>
