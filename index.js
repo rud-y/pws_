@@ -50,11 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     img.src = url;
   });
 
-    // setInterval(() => {
-    //   let x = Math.floor(Math.random() * imgs.length);
-    //   pictureDiv.style.backgroundImage = `url('images/${imgs[x]}')`;
-    // }, 3000);
-
     const layers = [
       document.querySelector("#bg-1"),
       document.querySelector("#bg-2"),
@@ -63,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(() => {
       let nextLayerIndex = activeLayerIndex === 0 ? 1 : 0;
-      let x = Math.floor(Math.random() * imgs.length);
-
       const activeLayer = layers[activeLayerIndex];
       const nextLayer = layers[nextLayerIndex];
 
-      pictureDiv.nextLayer.style.backgroundImage = `url('${imgs[x]}')`;
+      let x = Math.floor(Math.random() * imgs.length);
+
+      nextLayer.style.backgroundImage = `url('images/${imgs[x]}')`;
 
       nextLayer.style.opacity = 1;
       activeLayer.style.opacity = 0;
