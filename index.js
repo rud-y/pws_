@@ -37,13 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const pictureDiv = document.querySelector("#contact");
 
   const imgs = [
-    "i1.webp",
-    "i2.webp",
-    "i3.webp",
-    "i4.webp",
-    "i5.webp",
-    "i6.webp",
-    "i7.webp",
+    "images/i1.webp",
+    "images/i2.webp",
+    "images/i3.webp",
+    "images/i4.webp",
+    "images/i5.webp",
+    "images/i6.webp",
+    "images/i7.webp",
   ];
   imgs.forEach((url) => {
     const img = new Image();
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let x = Math.floor(Math.random() * imgs.length);
 
-      nextLayer.style.backgroundImage = `url('images/${imgs[x]}')`;
+      nextLayer.style.backgroundImage = `url('${imgs[x]}')`;
 
       nextLayer.style.opacity = 1;
       activeLayer.style.opacity = 0;
