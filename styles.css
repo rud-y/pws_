@@ -208,7 +208,7 @@ p, h2, h1 {
  color: var(--basic-blue);
 }
 .app-link-globelog {
-  color: var(--basic-blue);
+  color: var(--basic-darkblue);
 }
 
 .app-link-rps:hover {
