@@ -175,11 +175,12 @@ p, h2, h1 {
 
 #vet-listing, #dobble-listing, #eat-listing {
  background-color: var(--basic-darkblue);
-
+ 
  p, figcaption, h1, h2, h6, hr {
   color: var(--basic-yellow);
  }
 }
+
 #tournament-listing, #rps-listing, #globelog-listing {
  color: var(--basic-darkblue);
  background-color: var(--basic-yellow);
@@ -206,6 +207,9 @@ p, h2, h1 {
 .app-link-rps {
  color: var(--basic-blue);
 }
+.app-link-globelog {
+  color: var(--basic-blue);
+}
 
 .app-link-rps:hover {
  background-color: var(--basic-darkblue);
@@ -216,6 +220,12 @@ p, h2, h1 {
 .app-link-eat:hover {
  background-color: var(--basic-yellow);
  color: var(--basic-darkblue);
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+}
+.app-link-globelog:hover {
+ background-color: var(--basic-darkblue);
+ color: var(--basic-yellow);
  text-decoration: none;
  transition: all 0.3s ease-in-out;
 }
