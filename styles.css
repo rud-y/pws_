@@ -6,6 +6,8 @@
  --the-shadow: 4px 4px 20px 1px rgb(112, 115, 117);
  --light-background: #e4e3e3;
  --shady-background: linear-gradient(rgb(32, 32, 32), rgb(70, 73, 75));
+ --text-selection-bg: #ec388c;
+ --text-selection-color:  #ecf3f7;
 }
 
 .progress-bar-placeholder, .progress-bar {
@@ -34,6 +36,11 @@ html {
 body {
  font-family: "IM Fell Great Primer", serif;
  font-family: "Rhodium Libre", serif;
+}
+
+::selection {
+ background-color: var(--text-selection-bg);
+ color: var(--text-selection-color);         
 }
 
 h1,
