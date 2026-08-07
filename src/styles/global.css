@@ -1,0 +1,237 @@
+:root {
+  --bg: #f7f7f5;
+  --bg-elevated: #ffffff;
+  --ink: #0d0d0d;
+  --ink-muted: #5a5a5a;
+  --line: #d9d9d6;
+  --surface-dark: #111111;
+  --surface-dark-soft: #1a1a1a;
+  --text-on-dark: #f5f5f5;
+  --text-on-dark-muted: #bdbdbd;
+  --focus: #0d0d0d;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  --radius: 2px;
+  --nav-height: 56px;
+  --max-content: 1100px;
+  --font: "Cutive Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--ink);
+  color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.section {
+  width: 100%;
+  padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+}
+
+#about-me {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.7), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  padding-top: calc(var(--nav-height) + 2rem);
+}
+
+#about-me h1 {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+}
+
+#about-me p {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--ink-muted);
+  font-size: 1.05rem;
+}
+
+#portfolio {
+  background: var(--surface-dark);
+  color: var(--text-on-dark);
+}
+
+#portfolio h2 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.portfolio-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.listings {
+  content-visibility: auto;
+  contain-intrinsic-size: 700px;
+}
+
+.listings.project-detail {
+  background: var(--bg-elevated);
+  color: var(--ink);
+}
+
+.listings h1,
+.listings h2 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: var(--max-content);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.description {
+  padding: 0;
+}
+
+.description p + p {
+  margin-top: 1rem;
+}
+
+.description hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.25;
+  margin: 1.5rem 0;
+}
+
+.description h6 {
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
+}
+
+.app-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.listings .app-link:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.media-frame {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #000;
+}
+
+.media-frame img,
+.media-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.video-box {
+  margin: 0;
+}
+
+.figure-caption {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  opacity: 0.75;
+}
+
+@media (max-width: 900px) {
+  .listing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
