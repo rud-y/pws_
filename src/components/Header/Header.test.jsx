@@ -20,16 +20,24 @@ describe('Header', () => {
     );
   });
 
-  it('renders navigation links', () => {
+  it('renders accessible navigation links', () => {
     render(
       <MemoryRouter>
         <Header />
       </MemoryRouter>,
     );
 
-    expect(screen.getByTitle('About')).toBeInTheDocument();
-    expect(screen.getByTitle('Portfolio')).toBeInTheDocument();
-    expect(screen.getByTitle('Contact')).toBeInTheDocument();
-    expect(screen.getByText('RUDY')).toBeInTheDocument();
+    expect(
+      screen.getByRole('navigation', { name: 'Primary' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: 'About Rudy Zachar' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: 'Portfolio projects' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: 'Contact information' }),
+    ).toBeInTheDocument();
   });
 });

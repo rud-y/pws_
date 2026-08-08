@@ -1,12 +1,12 @@
 .sentinel {
-  flex: 1 1 300px;
-  max-width: 340px;
+  height: 100%;
 }
 
 .portfolioBox {
   height: 100%;
-  background: #161616;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #2a2a2a;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   border-radius: var(--radius);
   padding: 1.25rem;
   color: var(--text-on-dark);
@@ -16,7 +16,8 @@
     opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
     border-color 0.2s ease,
-    background-color 0.2s ease;
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
   will-change: transform, opacity;
 }
 
@@ -33,9 +34,16 @@
   transform: translate3d(0, 0, 0);
 }
 
-.portfolioBox:hover {
-  border-color: rgba(255, 255, 255, 0.35);
-  background: #1c1c1c;
+.portfolioBox:hover,
+.portfolioBox:focus-visible {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: #333333;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.portfolioBox:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
 }
 
 .imageLink {
@@ -66,7 +74,7 @@
 
 .divider {
   border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
   margin: 0 0 1rem;
 }
 

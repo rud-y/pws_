@@ -20,14 +20,15 @@ describe('ProjectCard', () => {
     );
   });
 
-  it('renders project title, links, and image', () => {
+  it('renders an accessible project region with clear links', () => {
     render(
       <MemoryRouter>
         <ProjectCard
           title="GlobeLog"
-          ariaLabel="GlobeLog project"
           githubUrl="https://github.com/rud-y/worldexplore"
           slug="globelog"
+          index={0}
+          total={6}
           image={{
             src: '/images/globelog_2.jpg',
             width: 200,
@@ -38,18 +39,18 @@ describe('ProjectCard', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByText('GlobeLog')).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'GitHub' })).toHaveAttribute(
-      'href',
-      'https://github.com/rud-y/worldexplore',
-    );
-    expect(screen.getByRole('link', { name: 'Show more' })).toHaveAttribute(
-      'href',
-      '/globelog',
-    );
-    expect(screen.getByAltText('GlobeLog screenshot')).toHaveAttribute(
-      'src',
-      '/images/globelog_2.jpg',
-    );
+    const project = screen.getByRole('article', { name: 'GlobeLog' });
+    expect(project).toHaveAttribute('tabindex', '0');
+    expect(screen.getByText('Project 1 of 6.')).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', {
+        name: 'View details for GlobeLog, project 1 of 6',
+      }),
+    ).toHaveAttribute('href', '/globelog');
+    expect(
+      screen.getByRole('link', {
+        name: 'GlobeLog on GitHub (opens in a new tab)',
+      }),
+    ).toHaveAttribute('href', 'https://github.com/rud-y/worldexplore');
   });
 });

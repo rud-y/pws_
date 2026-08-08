@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
+import SkipLink from './components/SkipLink/SkipLink';
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import ScrollManager from './components/ScrollManager/ScrollManager';
@@ -7,6 +8,7 @@ import ScrollManager from './components/ScrollManager/ScrollManager';
 function App() {
   return (
     <BrowserRouter>
+      <SkipLink />
       <ScrollManager />
       <Header />
       <Routes>

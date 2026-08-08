@@ -4,9 +4,9 @@ import { useInView } from '../../hooks/useInView';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
-  { to: '/#about-me', label: 'About' },
-  { to: '/#portfolio', label: 'Portfolio' },
-  { to: '/#contact', label: 'Contact' },
+  { to: '/#about-me', label: 'About', description: 'About Rudy Zachar' },
+  { to: '/#portfolio', label: 'Portfolio', description: 'Portfolio projects' },
+  { to: '/#contact', label: 'Contact', description: 'Contact information' },
 ];
 
 function Header() {
@@ -48,20 +48,20 @@ function Header() {
   }, []);
 
   return (
-    <header
-      className={styles.navWrapper}
-      aria-label="Rudolf Zachar portfolio website"
-    >
+    <header className={styles.navWrapper}>
       <Link
         className={`${styles.stickyName} ${showStickyName ? '' : styles.hidden}`}
         to="/"
+        aria-label="Rudy Zachar home"
+        tabIndex={showStickyName ? 0 : -1}
+        aria-hidden={!showStickyName}
       >
         RUDY
       </Link>
       <nav
         ref={navRef}
         className={styles.nav}
-        aria-label="Main navigation"
+        aria-label="Primary"
       >
         {NAV_LINKS.map((link, index) => (
           <NavLink
@@ -71,17 +71,16 @@ function Header() {
             }`}
             style={{ transitionDelay: `${120 + index * 90}ms` }}
             to={link.to}
-            title={link.label}
+            aria-label={link.description}
           >
             {link.label}
           </NavLink>
         ))}
       </nav>
-      <div className={styles.progressBarPlaceholder}>
+      <div className={styles.progressBarPlaceholder} aria-hidden="true">
         <div
           className={styles.progressBar}
           style={{ width: `${scrollProgress}%` }}
-          aria-hidden="true"
         />
       </div>
     </header>

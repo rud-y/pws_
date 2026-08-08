@@ -1,12 +1,17 @@
 import Reveal from '../Reveal/Reveal';
 
 function ProjectListing({ project }) {
-  const { listing } = project;
+  const { listing, slug, title } = project;
+  const headingId = `${slug}-detail-heading`;
+  const techHeadingId = `${slug}-tech-heading`;
 
   return (
-    <section className="section listings project-detail" aria-label={listing.ariaLabel}>
-      <Reveal as="h1" direction="left" delay={60}>
-        <strong>{listing.heading}</strong>
+    <article
+      className="section listings project-detail"
+      aria-labelledby={headingId}
+    >
+      <Reveal as="h1" id={headingId} direction="left" delay={60}>
+        {listing.heading}
       </Reveal>
       <div className="listing-grid">
         <Reveal direction="left" delay={140}>
@@ -24,17 +29,26 @@ function ProjectListing({ project }) {
                         className="app-link"
                         href={listing.appLink.href}
                         rel="noopener noreferrer"
+                        aria-label={`Open ${title} app (opens in a new tab)`}
                       >
                         {listing.appLink.label}
+                        <span className="visually-hidden">
+                          {' '}
+                          for {title} (opens in a new tab)
+                        </span>
                       </a>
                     </>
                   )}
                 </p>
               );
             })}
-            <hr />
-            <h6>{listing.techStackHeading || 'Tech Stack'}</h6>
-            {listing.techStack && <p>{listing.techStack}</p>}
+            <hr aria-hidden="true" />
+            <h2 className="tech-heading" id={techHeadingId}>
+              {listing.techStackHeading || 'Tech Stack'}
+            </h2>
+            {listing.techStack && (
+              <p aria-labelledby={techHeadingId}>{listing.techStack}</p>
+            )}
             {listing.techDetails?.map((detail) => (
               <p key={detail}>{detail}</p>
             ))}
@@ -48,7 +62,7 @@ function ProjectListing({ project }) {
               </figcaption>
               <div className="media-frame">
                 <video
-                  aria-label={listing.media.alt}
+                  aria-label={`${title} ${listing.media.alt || 'demo video'}`}
                   controls
                   preload="none"
                   playsInline
@@ -69,7 +83,7 @@ function ProjectListing({ project }) {
           )}
         </Reveal>
       </div>
-    </section>
+    </article>
   );
 }
 

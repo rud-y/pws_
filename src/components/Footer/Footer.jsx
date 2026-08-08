@@ -4,9 +4,11 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} aria-label="Site footer">
       <p>
-        &#169; <span>{currentYear}</span> Rudolf Zachar
+        <span aria-hidden="true">&#169; </span>
+        <span className="visually-hidden">Copyright </span>
+        <span>{currentYear}</span> Rudolf Zachar
       </p>
     </footer>
   );

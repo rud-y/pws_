@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
 /**
- * Observes a stable (non-transformed) element.
  * Keep transforms on a child — IO uses the transformed box, which was
  * preventing portfolio cards from ever reaching the intersection threshold.
  */
